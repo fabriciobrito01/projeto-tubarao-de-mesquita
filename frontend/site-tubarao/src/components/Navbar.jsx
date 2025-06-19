@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -104,10 +105,12 @@ function Navbar() {
           <div className="bar bar2"></div>
           <div className="bar bar3"></div>
         </div>
-        <ul className={`nav-links ${open ? "active" : ""}`}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/sobre">Sobre</a></li>
-          <li><a href="/contato">Contato</a></li>
+        <ul className={`nav-links${open ? " active" : ""}`}>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/institutotubarao">Instituto</Link></li>
+          <li><Link to="/cadastro">Cadastro</Link></li>
+          <li><Link to="/tubarao">Tubarão</Link></li>
+          <li><Link to="/noticias">Notícias</Link></li>
         </ul>
       </nav>
     </>
