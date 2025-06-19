@@ -117,11 +117,11 @@ function Navbar() {
           <div className="bar bar3"></div>
         </div>
         <ul className={`nav-links${open ? " active" : ""}`}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/institutotubarao">Instituto</Link></li>
-          <li><Link to="/cadastro">Cadastro</Link></li>
-          <li><Link to="/tubarao">Tubarão</Link></li>
-          <li><Link to="/noticias">Notícias</Link></li>
+          <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
+          <li><Link to="/institutotubarao" onClick={() => setOpen(false)}>Instituto</Link></li>
+          <li><Link to="/cadastro" onClick={() => setOpen(false)}>Cadastro</Link></li>
+          <li><Link to="/tubarao" onClick={() => setOpen(false)}>Tubarão</Link></li>
+          <li><Link to="/noticias" onClick={() => setOpen(false)}>Notícias</Link></li>
         </ul>
       </nav>
     </>
