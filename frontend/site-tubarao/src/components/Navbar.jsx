@@ -29,13 +29,13 @@ function Navbar() {
               transition: 0.3s;
             }
             .hamburger.open .bar1 {
-              transform: rotate(45deg) translate(8px);
+              transform: rotate(45deg) translate(12.5px);
             }
             .hamburger.open .bar2 {
               opacity: 0;
             }
             .hamburger.open .bar3 {
-              transform: rotate(-45deg) translate(8px);
+              transform: rotate(-45deg) translate(12.5px);
             }
             
         .header-menu-icon {
@@ -53,18 +53,22 @@ function Navbar() {
           background: #fff;
           border-radius: 2px;
           transition: 0.3s;
+          transform-origin: center;
         }
 
         .nav-links {
           display: flex;
           gap: 1.5rem;
           list-style: none;
+          min-height: 640px;
         }
 
         .nav-links li a {
           color: #fff;
+          font-size: 1.5rem;
           text-decoration: none;
           font-weight: 500;
+          padding: 1rem;
         }
 
         @media (max-width: 768px) {
@@ -73,19 +77,26 @@ function Navbar() {
           }
           .nav-links {
             position: absolute;
-            top: 60px;
+            top: 45px;
             right: 0;
             background: #222;
             flex-direction: column;
-            width: 180px;
-            gap: 0;
-            display: none;
-            padding: 1rem 0;
-            border-radius: 0 0 8px 8px;
+            width: 100%;
+            gap: 1rem;
+            display: flex;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, max-height 0.3s ease;
+            padding: 0;
+            text-align: center;
+            justify-content: flex-start;
           }
 
           .nav-links.active {
-            display: flex;
+            opacity: 1;
+            max-height: 300px;
+            padding: 1rem 0;
           }
 
           .nav-links li {
@@ -106,8 +117,10 @@ function Navbar() {
         </div>
         <ul className={`nav-links ${open ? "active" : ""}`}>
           <li><a href="/">Home</a></li>
-          <li><a href="/sobre">Sobre</a></li>
-          <li><a href="/contato">Contato</a></li>
+          <li><a href="/sobre">Instituto</a></li>
+          <li><a href="/contato">Cadastro</a></li>
+          <li><a href="/servicos">Tubarao</a></li>
+          <li><a href="/blog">Noticias</a></li>
         </ul>
       </nav>
     </>
