@@ -143,12 +143,14 @@ function Navbar() {
             text-align: center;
             justify-content: flex-start;
             z-index: 10;
+            pointer-events: none;
           }
 
           .nav-links.active {
             opacity: 1;
             max-height: 300px;
             padding: 1rem 0;
+            pointer-events: auto;
           }
 
           .nav-links li {
