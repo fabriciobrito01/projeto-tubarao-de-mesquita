@@ -27,8 +27,8 @@ h1 {
     font-size: 2.1rem;
     text-align: center;
     color: #CB910F;
-    margin: 10px;
-    padding-top: 10px;
+    margin: 0.5rem;
+    padding-top: 1rem;
 }
 
 h2 {
@@ -39,18 +39,16 @@ h2 {
     font-size: 2.1rem;
     text-align: center;
     color: #CB910F;
-    margin: 10px;
+    margin: 0.5rem;
+    padding-top: 3rem;
 }
 
 p {
-    font-family: "Lexend", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     text-align: center;
     padding: 0.3rem;
-    margin: 10px;
-    padding: 1rem;
-    background-color: #e6e6e6;
-    border-radius: 25px;
+    margin: 0.5rem;
 }
