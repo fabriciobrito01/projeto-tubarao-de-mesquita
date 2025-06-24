@@ -5,10 +5,19 @@ import logoTubarao from '../assets/logo-tubarao.svg';
 function Navbar() {
   const [open, setOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    if (!open) setSubmenuOpen(false); // Fecha o submenu quando o menu principal é fechado
+    if (!open) setSubmenuOpen(false);
   }, [open]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleCloseMenus = () => {
     setOpen(false);
@@ -25,8 +34,17 @@ function Navbar() {
           justify-content: space-between;
           background: #222;
           padding: 1rem 2rem;
-          color: #fff;
-          position: relative;
+          color: #000;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          transition: box-shadow 0.3s;
+          box-shadow: none;
+        }
+        .navbar.scrolled {
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.62);
         }
 
         .logo-tubarao {
@@ -180,7 +198,7 @@ function Navbar() {
           }
         `}
       </style>
-      <nav className="navbar">
+      <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
         <div className="logo-tubarao">
           <img src={logoTubarao} alt="Logo" />
         </div>

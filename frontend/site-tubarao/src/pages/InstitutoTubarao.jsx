@@ -26,12 +26,15 @@ function InstitutoTubarao() {
                 .atividadesRealizadas {
                     background: #222;
                     border-radius: 0.5rem;
-                    margin: 1rem auto;
+                    margin: 0rem auto;
                     }
                 .atividadesRealizadas p {
                     color: #fff;
                     font-weight: 400;
                 }
+
+                .atividadesRealizadas h2 {
+                    padding-top: 3rem;
                 `}
             </style>
 
