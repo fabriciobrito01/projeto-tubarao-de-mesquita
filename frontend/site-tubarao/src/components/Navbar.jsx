@@ -200,7 +200,9 @@ function Navbar() {
       </style>
       <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
         <div className="logo-tubarao">
-          <img src={logoTubarao} alt="Logo" />
+          <Link to="/" onClick={handleCloseMenus}>
+            <img src={logoTubarao} alt="Logo" />
+          </Link>
         </div>
         <div
           className={`header-menu-icon hamburger ${open ? "open" : ""}`}

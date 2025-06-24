@@ -116,7 +116,9 @@ function Footer() {
             <footer className="footer">
                 <div>
                     <div className="logo-tubarao">
-                        <img src={logoTubarao} alt="Logo" />
+                        <Link to="/">
+                            <img src={logoTubarao} alt="Logo" />
+                        </Link>
                     </div>
                     <div className="footer-links-rows">
                         <div className="footer-links-row">
