@@ -91,6 +91,7 @@ function Navbar() {
         }
 
         .nav-links li {
+          font-family: "Lexend", sans-serif;
           position: relative;
         }
 
@@ -98,7 +99,7 @@ function Navbar() {
           color: #fff;
           font-size: 1.5rem;
           text-decoration: none;
-          font-weight: 500;
+          font-weight: 400;
           padding: 1rem;
           display: block;
         }
