@@ -22,7 +22,6 @@ body {
 
 h1 {
     font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
     font-size: 2.1rem;
@@ -34,10 +33,9 @@ h1 {
 
 h2 {
     font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    font-size: 2.1rem;
+    font-size: 1.3rem;
     text-align: center;
     color: #CB910F;
     margin: 0.5rem;
@@ -46,10 +44,17 @@ h2 {
 
 p {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
-    padding: 0.3rem;
+    padding: 0.5rem;
     margin: 0.5rem;
+}
+
+hr {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #CB910F;
+    border: none;
 }
