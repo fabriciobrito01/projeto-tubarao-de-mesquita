@@ -11,19 +11,6 @@ function InstitutoTubarao() {
         <>
             <style>
                 {`
-                .carousel-container {
-                  max-width: 400px;
-                  margin: 0 auto 2rem auto;
-                  border-radius: 16px;
-                  padding: 0.5rem 1rem;
-                  padding-top: 0rem;
-                  border: 2px;
-                }
-                .carousel-container .carousel .slide img {
-                  border-radius: 10px;
-                  object-fit: cover;
-                  height: 220px;
-                }
                 .atividadesRealizadas {
                     background: #222;
                     border-radius: 0.5rem;

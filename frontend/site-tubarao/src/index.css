@@ -17,8 +17,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-} 
+    /* align-items: center; */
+}
 
 h1 {
     font-family: "Lexend", sans-serif;
@@ -42,6 +42,17 @@ h2 {
     padding-top: 0rem;
 }
 
+h3 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: ffffff;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+}
+
 p {
     font-family: "Inter", sans-serif;
     font-size: 0.9rem;
@@ -57,4 +68,28 @@ hr {
     height: 0.2rem;
     background-color: #CB910F;
     border: none;
+}
+
+a {
+    color: #CB910F;
+    display: inline-block;
+    text-align: right;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+}
+
+
+.carousel-container {
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    padding-top: 0rem;
+    border: 2px;
+}
+
+.carousel-container .carousel .slide img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 220px;
 }

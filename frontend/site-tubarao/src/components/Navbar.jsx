@@ -101,7 +101,7 @@ function Navbar() {
           text-decoration: none;
           font-weight: 400;
           padding: 1rem;
-          display: block;
+          allign-items: center;
         }
 
         /* Submenu absoluto */
