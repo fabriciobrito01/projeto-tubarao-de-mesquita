@@ -2,6 +2,7 @@ import { useState } from "react";
 import backgroudImage from "../assets/batismo-casaisebandeiras.jpg";
 import locationSvg from "../assets/location-svgrepo-com.svg";
 import mailSvg from "../assets/mail-svgrepo-com.svg";
+import Button1 from "../components/Button1";
 
 function Home() {
   const [nome, setNome] = useState("");
@@ -27,7 +28,7 @@ function Home() {
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 530px;
+            height: 565px;
             }
 
           .sobre-nós h2 {
@@ -70,7 +71,7 @@ function Home() {
             position: relative;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.75);
+            background-color: rgba(0, 0, 0, 0.85);
             padding-top: 0.4rem;
             }
 
@@ -96,6 +97,8 @@ function Home() {
             }
 
           .form-contato button {
+            display: block;
+            margin: 2rem auto 0 auto;
             align-items: center;
             justify-content: center;
             width: 70%;
@@ -142,7 +145,7 @@ function Home() {
                   rows={4}
                   required
                 />
-                <button type="submit">Enviar email</button>
+                <Button1 type="submit">Enviar email</Button1>
               </form>
           </div>
         </div>
