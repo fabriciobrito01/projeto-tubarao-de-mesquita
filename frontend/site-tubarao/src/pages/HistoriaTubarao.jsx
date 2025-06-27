@@ -18,6 +18,8 @@ function HistoriaTubarao() {
                 text-align: left;
                 white-space: pre-line;
                 margin-top: 0rem;
+                font-size: 0.6rem;
+                font-weight: 550;
             }
             `}
             </style>
@@ -64,26 +66,26 @@ function HistoriaTubarao() {
                         dynamicHeight={false}
                     >
                         <div>
-                        <img src={casaisTubaraoBeijaFlor} alt="Casal de mestre-sala e porta-bandeira da Tubarão de Mesquita e da Beija-Flor de Nilópolis se apresentando." />
-                    </div>
-                    <div>
-                        <img src={bandeirasCruzadas} alt="Portas-bandeiras da Tubarão de Mesquita e da Beija-Flor de Nilópolis cruzadando suas respectivas bandeiras." />
-                    </div>
-                    <div>
-                        <img src={passistasBeijaFlor} alt="Passistas da Beija-Flor de Nilópolis se apresentando." />
-                    </div>
-                    <div>
-                        <img src={bateriaBeijaFlor} alt="Bateria da Beija-Flor de Nilópolis se apresentando." />
-                    </div>
-                    <div>
-                        <img src={presidentesComMestres} alt="Presidente Paulo Sérgio e Presidente de Honra Dib Elias da Tubarão de Mesquita ao lado dos Mestres Plínio e Rodney da Beija-Flor de Nilópolis." />
-                    </div>
-                    <div>
-                        <img src={casalBeijaFlor} alt="Casal de mestre-sala e porta-bandeira da Beija-Flor de Nilópolis se apresentando." />
-                    </div>
-                    <div>
-                        <img src={presidenteTubaraoComCasalBeijaFlor} alt="Presidente Paulo Sérgio beijando bandeira da Beija-Flor de Nilópolis." />
-                    </div>
+                            <img src={casaisTubaraoBeijaFlor} alt="Casal de mestre-sala e porta-bandeira da Tubarão de Mesquita e da Beija-Flor de Nilópolis se apresentando." />
+                        </div>
+                        <div>
+                            <img src={bandeirasCruzadas} alt="Portas-bandeiras da Tubarão de Mesquita e da Beija-Flor de Nilópolis cruzadando suas respectivas bandeiras." />
+                        </div>
+                        <div>
+                            <img src={passistasBeijaFlor} alt="Passistas da Beija-Flor de Nilópolis se apresentando." />
+                        </div>
+                        <div>
+                            <img src={bateriaBeijaFlor} alt="Bateria da Beija-Flor de Nilópolis se apresentando." />
+                        </div>
+                        <div>
+                            <img src={presidentesComMestres} alt="Presidente Paulo Sérgio e Presidente de Honra Dib Elias da Tubarão de Mesquita ao lado dos Mestres Plínio e Rodney da Beija-Flor de Nilópolis." />
+                        </div>
+                        <div>
+                            <img src={casalBeijaFlor} alt="Casal de mestre-sala e porta-bandeira da Beija-Flor de Nilópolis se apresentando." />
+                        </div>
+                        <div>
+                            <img src={presidenteTubaraoComCasalBeijaFlor} alt="Presidente Paulo Sérgio beijando bandeira da Beija-Flor de Nilópolis." />
+                        </div>
                     </Carousel>
                 </div>
 
@@ -91,60 +93,52 @@ function HistoriaTubarao() {
                 <hr />
                 <br />
 
-                <h2>ONDE TUDO COMEÇOU - CARNAVAL 2022</h2>
+                <h2>CARNAVAL 2022</h2>
 
                 <br />
 
                 <h3>ENREDO: "MESQUITA FUTEBOL CLUBE - DE BARÃO À TUBARÃO."</h3>
 
                 <p>
-                    Antes de mergulhar nas águas do tubarão é importante conhecer as terras de Mutambó, caminhando entre os canaviais, descansando à sombra dos laranjais, ouvindo histórias de uma cidade que já nasceu nobre pelas mãos de um Barão, o Jerônimo de Mesquita.
+                    O enredo apresenta a história de Mesquita, município da Baixada Fluminense, desde os tempos coloniais até sua emancipação em 1999. Surgida nas terras do antigo Barão de Mesquita, a região passou por ciclos de cana-de-açúcar, laranja, industrialização e urbanização, moldando sua identidade ao longo do tempo.
+                    <br /><br />
+                    Paralelamente, nasce o Mesquita Futebol Clube, fundado em 1920 por operários locais. Com garra, energia e coragem, o time conquista seu espaço e ganha o apelido de "Tubarão", símbolo da força mesquitense nos gramados.
+                    <br /><br />
+                    Hoje, essa mesma força se transforma em samba: nasce o Grêmio Recreativo Escola de Samba Tubarão de Mesquita, novo símbolo cultural da cidade, que leva para a avenida o orgulho e a história do seu povo.
                 </p>
+
+                <br />
 
                 <h3>SAMBA-ENREDO: </h3>
 
                 <p className="samba-enredo">{`
-                Os rios vão de vencida
-                    As pedras ficam no fundo
-                    A água é que move essa vida
-                    A vida é que move esse mundo
-                    Desde a gota que batiza
-                    Até a lágrima do fim
-                    A gente se realiza
-                    Entre o que é bom e é ruim
-                    Choro de teima é pirraça
-                    Cama de orvalho é chapéu
-                    Água que queima é cachaça
-                    Chuva que cai vem do céu
+                É TUBA...TUBA...É TUBARÃO (
+                O POVO SE AGITA E GRITA (
+                QUEM NÃO TEM BOLA NO PÉ E NEM SAMBA NA MÃO (
+                PEIXE NÃO É NEM NADA EM MESQUITA (BIS
 
-                    bênção que jorra da bica
-                    Das mãos de Iara e Oxum, Oxum
-                    Que Oxalá purifica
-                    É nosso bem mais comum
-
-                    As nossa vidas e vilas
-                    Nem sempre tranquilas cresceram ao redor
-                    Dos cursos de uma nascente
-                    Que puxa a corrente de um rio de amor
-                    Se a memória não escapa
-                    Nas ondas que vão e que vem
-                    Até os arcos da Lapa
-                    Rolaram água também
-                    No tempo do Imperador
-                    Houve alguém que lançou
-                    O maior desafio
-                    A engenharia propôs
-                    E depois construiu
-                    O sonhado desvio
-                    E a cada novo poder
-                    Foi se alargando o favor
-                    Que fez o povo sofrer
-                    Quase morrer de calor
-
-                    Sábio é quem acredita
-                    No que é melhor para si
-                    Sou Tubarão de Mesquita
-                    O meu lugar é aqui
+                E TUDO COMEÇOU NO BARRO,
+                NA RODA E NO CALOR DO FOGO:
+                TIJOLO, TELHA, POTE, JARRO
+                E O HOMEM PONDO A BOLA EM JOGO.
+                NA ESCOLA DE OURO, QUE É BRANCA E É NEGRA
+                QUEM NÃO DÁ COURO BEM CEDO SE ARRANCA;
+                SE QUEM CHEGA E QUEM TRAZ TIA NEGA É DA PAZ,
+                A RODA SE FAZ E TAMBÉM BOTA BANCA.
+                
+                NA MÃO E NO PÉ DIZENDO A QUE VEM (
+                MESQUITA NÃO É MELHOR DO QUE NINGUÉM (
+                É VILA QUE ROLA DO AMOR DE UM BARÃO (
+                COM SAMBA DE ESCOLA E COM BOLA NO CHÃO (BIS
+                
+                OS SILVA E OS MAZZA NO MEU FUTEBOL
+                SÃO RAIOS DE SOL ABRINDO O CAMINHO.
+                NA RUA OU EM CASA, NUM SAMBA QUE ASSOMBRA. (ARRASA?)
+                QUEM FAZ LUZ E SOMBRA É NELSOM CAVAQUINHO.
+                PRA QUEM TEVE DICO, WALDIR E TAINHA,
+                ROMILDO, DICRÓ E TONINHO AINDA TEM,
+                MESQUITA É UMA FESTA DE PRAÇA E DE FEIRA
+                QUE BRINCA NA BEIRA DA LINHA DO TREM.
                     `}</p>
 
                 <a href="https://www.youtube.com/watch?v=0JQkqXZNEJM&list=RD0JQkqXZNEJM&start_radio=1">Ouça o samba-enredo da Tubarão de 2022</a>
@@ -173,6 +167,254 @@ function HistoriaTubarao() {
                     </div> */}
                     </Carousel>
                 </div>
+
+                <br />
+                <hr />
+                <br />
+
+                <h2>CARNAVAL 2023</h2>
+
+                <br />
+
+                <h3>ENREDO: "LEVANTA BAIXADA! SAMBA SUA ARTE!"</h3>
+
+                <p>O enredo parte do marco histórico da inauguração da primeira ferrovia do Brasil, em 1854, na atual Magé, para contar como os trilhos do trem transformaram a Baixada Fluminense, conectando passado, presente e cultura.
+                <br /><br />
+                De terras férteis e laranjais perfumados ao crescimento urbano acelerado, a Baixada enfrentou desafios como a violência e a precariedade urbana. Ainda assim, resistiu — e resistiu com arte.
+                <br /><br />
+                É na força da criação, na riqueza cultural espalhada por seus 13 municípios, que a Baixada se reinventa e se afirma. Com teatros, bibliotecas, cineclubes e artistas reconhecidos, a região pulsa criatividade, orgulho e transformação.
+                <br /><br />
+                O GRES Tubarão de Mesquita pinta essa história como uma aquarela vibrante, celebrando a cultura viva da Baixada e convidando todos a seguirem os trilhos da antiga locomotiva Baronesa, em uma viagem de descobertas e encantos.
+                </p>
+
+                <br />
+
+                <h3>SAMBA-ENREDO: </h3>
+
+                <p className="samba-enredo">{`
+                    A BAIXADA SE LEVANTA (
+                    PRA MOSTRAR COMO É QUE É (
+                    QUE SE CONTA E QUE SE CANTA (
+                    E SE FAZ SAMBA NO PÉ. ( BIS
+
+                    MEU ESTANDARTE LEVA O SAMBA A TODA PARTE
+                    E FAZ DELE A OITAVA ARTE COM MEU SONHO DE CETIM:
+                    PALAVRA, ESPAÇO, CORPO, SOM, VOLUME E TELATÊM MAIS COR NA PASSARELA QUE SE ABRE PARA MIM.
+                    O POVO E A TERRA SÃO MOTIVOS DE MEUS TEMAS;
+                    A RAZÃO DE MEUS POEMAS CORRE O CHÃO, O CÉU E O MAR... SOU PRETO E BRANCO, COM NUANCES DE DOURADO.
+                    VIM DOS CAMPOS DO PASSADO, TRAGO EM MIM O MEU LUGAR. 
+                    
+                    DO APITO DE UM TREM AO APITO DO SAMBA, (
+                    MINHA ESCOLA TAMBÉM EVOLUI PRA CARAMBA: (
+                    NELA SAI QUEM NÃO TEM DOR NA MÃO, PERNA BAMBA; (
+                    QUANDO VAI, QUANDO VEM, ELA É CORDA E EU, CAÇAMBA. (BIS  (MAS EU SOU 
+                    
+                    BATUQUEIRO, SOU PAPA-GOIABA DA PERIFERIA
+                    QUE DÁ ASA E ABA A QUALQUER FANTASIA,
+                    NA LUTA SE ACABA E É O REI DA FOLIA.
+                    COM GARRA E SEM JUBA HÁ EM MIMUM LEÃOE UM GATO NA TUBA DO MEU CORAÇÃO.
+                    SE HÁ QUEM NÃO SUBA COM MEDO DE CHÃO,
+                    NINGUÉM MAIS DERRUBA O MEU TUBARÃO.
+                `}</p>
+
+                <a href="https://www.youtube.com/watch?v=mb4exq-fmLs&list=RDmb4exq-fmLs&start_radio=1">Ouça o samba-enredo da Tubarão de 2023</a>
+                <div className="carousel-container">
+                    <Carousel
+                        showThumbs={false}
+                        showStatus={false}
+                        infiniteLoop
+                        autoPlay
+                        interval={4000}
+                        stopOnHover
+                        swipeable
+                        dynamicHeight={false}
+                    >
+                        {/* <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div> */}
+                    </Carousel>
+                </div>
+
+                <br />
+                <hr />
+                <br />
+
+                <h2>CARNAVAL 2024</h2>
+                
+                <br />
+                
+                <h3>ENREDO: "A ÁGUA DE NOSSOS RIOS DESÁGUA NUM RIO MAIOR."</h3>
+
+                <p>O enredo celebra a água como elemento essencial à vida — não só biológica, mas também social, cultural e espiritual. Presente em todos os estados da natureza e em todos os aspectos da existência, ela foi base das grandes civilizações e do desenvolvimento humano.
+                <br /><br />
+                Na Baixada Fluminense, os rios moldaram cidades, histórias e identidades. Ao mesmo tempo em que alimentam o Rio de Janeiro, muitas vezes esses rios deixam seus próprios filhos — os municípios da Baixada — em situação de escassez e negligência.
+                <br /><br />
+                A Tubarão de Mesquita propõe uma reflexão poética e consciente: falar da água que constrói, nutre e conecta, mas também alertar sobre os impactos da urbanização e da industrialização que transformaram esse bem vital em um recurso ameaçado.
+                <br /><br />
+                Ao cantar os caminhos e descaminhos de seus rios, a escola reafirma a importância de preservar a água como símbolo de vida, memória e futuro da Baixada Fluminense.
+                </p>
+
+                <br />
+
+                <h3>SAMBA-ENREDO: </h3>
+
+                <p className="samba-enredo">{`
+                    OS RIOS VÃO DE VENCIDA;
+                    AS PEDRAS FICAM NO FUNDO.
+                    A ÁGUA É QUE MOVE ESSA VIDA;
+                    A VIDA É QUE MOVE ESSE MUNDO.
+                    DESDE A GOTA QUE BATIZA ATÉ A LAGRIMA DO FIM,
+                    A GENTE SE REALIZA ENTRE O QUE É BOM E É RUIM.
+                    CHORO DE TEIMA É PIRRAÇA, CAMA DE ORVALHO É CHAPÉU,
+                    ÁGUA QUE QUEIMA É CACHAÇA, CHUVA QUE CAI VEM DO CÉU.
+                                                               (Ô, BÊNÇAO)
+
+                    BÊNÇÃO QUE JORRA DA BICA,   (
+                    DAS MÃOS DE IARA E DE OXUM, ( (OXUM)
+                    QUE OXALÁ PURIFICA          (
+                    É NOSSO BEM MAIS COMUM.     (BIS
+
+                    AS NOSSAS VIDAS E VILAS, NEM SEMPRE TRANQUILAS,
+                    CRESCERAM AO REDOR
+                    DOS CURSOS DE UMA NASCENTE
+                    QUE PUXA A CORRENTE DE UM RIO MAIOR.
+                    SE A MEMÓRIA NÃO ME ESCAPA, NAS ONDAS QUE VÃO E QUE VÊM,
+                    ATÉ OS ARCOS DA LAPA ROLARAM ÁGUA TAMBÉM.
+                    NO TEMPO DO IMPERADOR,
+                    HOUVE ALGUEM QUE LANCOU O MAIOR DESAFIO.
+                    A ENGENHARIA PROPÔS E DEPOIS CONSTRUIU O SONHADO DESVIO.
+                    E A CADA NOVO PODER, FOI SE ALARGANDO O FAVOR,
+                    QUE FEZ O POVO SOFRER, QUASE MORRER DE CALOR.
+
+                    SÁBIO É QUEM ACREDITA     (
+                    NO QUE É MELHOR PARA SI.  (
+                    SOU TUBARÃO DE MESQUITA:  (
+                    O MEU LUGAR É AQUI.       (BIS   
+                `}</p>
+
+                <a href="https://www.youtube.com/watch?v=w1vEIsmmWOM&list=RDw1vEIsmmWOM&start_radio=1">Ouça o samba-enredo da Tubarão de 2024</a>
+                <div className="carousel-container">
+                    <Carousel
+                        showThumbs={false}
+                        showStatus={false}
+                        infiniteLoop
+                        autoPlay
+                        interval={4000}
+                        stopOnHover
+                        swipeable
+                        dynamicHeight={false}
+                    >
+                        {/* <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div> */}
+                    </Carousel>
+                </div>
+
+                <br />
+                <hr />
+                <br />
+
+                <h2>CARNAVAL 2025</h2>
+                
+                <br />
+                
+                <h3>ENREDO: "REPENSE, REFLITA, RECICLA, VEM NA ONDA DA SUSTENTABILIDADE COM A TUBARÃO DE MESQUITA."</h3>
+
+                <p>O enredo celebra a água como elemento essencial à vida — não só biológica, mas também social, cultural e espiritual. Presente em todos os estados da natureza e em todos os aspectos da existência, ela foi base das grandes civilizações e do desenvolvimento humano.
+                <br /><br />
+                Na Baixada Fluminense, os rios moldaram cidades, histórias e identidades. Ao mesmo tempo em que alimentam o Rio de Janeiro, muitas vezes esses rios deixam seus próprios filhos — os municípios da Baixada — em situação de escassez e negligência.
+                <br /><br />
+                A Tubarão de Mesquita propõe uma reflexão poética e consciente: falar da água que constrói, nutre e conecta, mas também alertar sobre os impactos da urbanização e da industrialização que transformaram esse bem vital em um recurso ameaçado.
+                <br /><br />
+                Ao cantar os caminhos e descaminhos de seus rios, a escola reafirma a importância de preservar a água como símbolo de vida, memória e futuro da Baixada Fluminense.
+                </p>
+
+                <br />
+
+                <h3>SAMBA-ENREDO: </h3>
+
+                <p className="samba-enredo">{`
+                NUM CLAMOR A CADA UM DE NOS
+                MINHA ESCOLA ERGUE A VOZ
+                PARA O MUNDO INTEIRO OUVIR
+                ANDAM DETURPANDO A REALIDADE
+                MAS SUSTENTABILIDADE E CRESCER SEM DESTRUIR
+                ENTÃO UM FLORESTEIRO LENDÁRIO
+                EM UM GRITO SOLITARIO, PRENUNCIA AS TRAGÉDIAS ATUAIS
+                A GANÂNCIA HUMANA EXPLORAVA ALÉM DO NECESSÁRIO OS RECURSOS NATURAIS
+                CADÊ A ARARA AZUL, SUMIU O LOBO GUARÁ E SE A ÁGUA SECAR
+                NO CHÃO QUE O GANHA PÃO VEM DA SEMENTE.
+                NA CONTA DE QUEM VAI FICAR
+                O SOFRIMENTO QUE MALTRATA NOSSA GENTE
+
+                SONHEI QUE O BRASIL VOLTOU A SER ALDEIA    (
+                ONDE O HOMEM SO COLHE AQUILO QUE SEMEIA    (
+                E PREVALECIA O SENTIMENTO                  (
+                DE GRATIDÃO À TERRA PELO SEU SUSTENTO      (BIS 
+
+                A MISSÃO É PROTEGER
+                FAZER FLORESCER O DEVER DE PRESERVAR
+                JÁ NÃO BASTA MAIS SABER
+                TEM QUE DEFENDER, SE PRECISO LUTAR
+                É HORA DE FAZER UM JURAMENTO
+                QUE O DESENVOLVIMENTO
+                NÃO SERÁ COM SACRIFÍCIO AMBIENTAL
+                DÁ PRA IMPULSIONAR A ECONOMIA, TER TECNOLOGIA
+                VEJA O EXEMPLO DO MEU CARNAVAL
+                QUE USA, REÚSA, REMONTA, PINTA, BORDA E APRONTA
+                COM RESPONSABILIDADE SOCIAL
+
+                NO MAR DA DEGRADAÇÃO                      (
+                RESISTE VALENTE, O MEU TUBARÃO            (
+                VEM DA BAIXADA UM OLHAR DE ESPERANÇA      (
+                QUE A VIDA SEJA SEMPRE A MAIOR HERANÇA    (BIS 
+                `}</p>
+
+                <a href="https://www.youtube.com/watch?v=T6RX4ln_HwY">Ouça o samba-enredo da Tubarão de 2025</a>
+                <div className="carousel-container">
+                    <Carousel
+                        showThumbs={false}
+                        showStatus={false}
+                        infiniteLoop
+                        autoPlay
+                        interval={4000}
+                        stopOnHover
+                        swipeable
+                        dynamicHeight={false}
+                    >
+                        {/* <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div>
+                    <div>
+                        <img src={} alt="" />
+                    </div> */}
+                    </Carousel>
+                </div>
+
             </div>
         </>
     );
