@@ -127,8 +127,8 @@ function Footer() {
                             <Link to="/cadastro">Cadastro</Link>
                         </div>
                         <div className="footer-links-row">
-                            <Link to="/historia">História</Link>
-                            <Link to="/fichatecnica">Ficha Técnica</Link>
+                            <Link to="/tubarao/historia">História</Link>
+                            <Link to="/tubarao/fichatecnica">Ficha Técnica</Link>
                             <Link to="/noticias">Notícias</Link>
                         </div>
                     </div>
