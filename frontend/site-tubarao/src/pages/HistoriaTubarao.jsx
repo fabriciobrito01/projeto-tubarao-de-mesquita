@@ -178,13 +178,14 @@ function HistoriaTubarao() {
 
                 <h3>ENREDO: "LEVANTA BAIXADA! SAMBA SUA ARTE!"</h3>
 
-                <p>O enredo parte do marco histórico da inauguração da primeira ferrovia do Brasil, em 1854, na atual Magé, para contar como os trilhos do trem transformaram a Baixada Fluminense, conectando passado, presente e cultura.
-                <br /><br />
-                De terras férteis e laranjais perfumados ao crescimento urbano acelerado, a Baixada enfrentou desafios como a violência e a precariedade urbana. Ainda assim, resistiu — e resistiu com arte.
-                <br /><br />
-                É na força da criação, na riqueza cultural espalhada por seus 13 municípios, que a Baixada se reinventa e se afirma. Com teatros, bibliotecas, cineclubes e artistas reconhecidos, a região pulsa criatividade, orgulho e transformação.
-                <br /><br />
-                O GRES Tubarão de Mesquita pinta essa história como uma aquarela vibrante, celebrando a cultura viva da Baixada e convidando todos a seguirem os trilhos da antiga locomotiva Baronesa, em uma viagem de descobertas e encantos.
+                <p>
+                    O enredo parte do marco histórico da inauguração da primeira ferrovia do Brasil, em 1854, na atual Magé, para contar como os trilhos do trem transformaram a Baixada Fluminense, conectando passado, presente e cultura.
+                    <br /><br />
+                    De terras férteis e laranjais perfumados ao crescimento urbano acelerado, a Baixada enfrentou desafios como a violência e a precariedade urbana. Ainda assim, resistiu — e resistiu com arte.
+                    <br /><br />
+                    É na força da criação, na riqueza cultural espalhada por seus 13 municípios, que a Baixada se reinventa e se afirma. Com teatros, bibliotecas, cineclubes e artistas reconhecidos, a região pulsa criatividade, orgulho e transformação.
+                    <br /><br />
+                    O GRES Tubarão de Mesquita pinta essa história como uma aquarela vibrante, celebrando a cultura viva da Baixada e convidando todos a seguirem os trilhos da antiga locomotiva Baronesa, em uma viagem de descobertas e encantos.
                 </p>
 
                 <br />
@@ -249,18 +250,19 @@ function HistoriaTubarao() {
                 <br />
 
                 <h2>CARNAVAL 2024</h2>
-                
+
                 <br />
-                
+
                 <h3>ENREDO: "A ÁGUA DE NOSSOS RIOS DESÁGUA NUM RIO MAIOR."</h3>
 
-                <p>O enredo celebra a água como elemento essencial à vida — não só biológica, mas também social, cultural e espiritual. Presente em todos os estados da natureza e em todos os aspectos da existência, ela foi base das grandes civilizações e do desenvolvimento humano.
-                <br /><br />
-                Na Baixada Fluminense, os rios moldaram cidades, histórias e identidades. Ao mesmo tempo em que alimentam o Rio de Janeiro, muitas vezes esses rios deixam seus próprios filhos — os municípios da Baixada — em situação de escassez e negligência.
-                <br /><br />
-                A Tubarão de Mesquita propõe uma reflexão poética e consciente: falar da água que constrói, nutre e conecta, mas também alertar sobre os impactos da urbanização e da industrialização que transformaram esse bem vital em um recurso ameaçado.
-                <br /><br />
-                Ao cantar os caminhos e descaminhos de seus rios, a escola reafirma a importância de preservar a água como símbolo de vida, memória e futuro da Baixada Fluminense.
+                <p>
+                    O enredo celebra a água como elemento essencial à vida — não só biológica, mas também social, cultural e espiritual. Presente em todos os estados da natureza e em todos os aspectos da existência, ela foi base das grandes civilizações e do desenvolvimento humano.
+                    <br /><br />
+                    Na Baixada Fluminense, os rios moldaram cidades, histórias e identidades. Ao mesmo tempo em que alimentam o Rio de Janeiro, muitas vezes esses rios deixam seus próprios filhos — os municípios da Baixada — em situação de escassez e negligência.
+                    <br /><br />
+                    A Tubarão de Mesquita propõe uma reflexão poética e consciente: falar da água que constrói, nutre e conecta, mas também alertar sobre os impactos da urbanização e da industrialização que transformaram esse bem vital em um recurso ameaçado.
+                    <br /><br />
+                    Ao cantar os caminhos e descaminhos de seus rios, a escola reafirma a importância de preservar a água como símbolo de vida, memória e futuro da Baixada Fluminense.
                 </p>
 
                 <br />
@@ -333,18 +335,19 @@ function HistoriaTubarao() {
                 <br />
 
                 <h2>CARNAVAL 2025</h2>
-                
+
                 <br />
-                
+
                 <h3>ENREDO: "REPENSE, REFLITA, RECICLA, VEM NA ONDA DA SUSTENTABILIDADE COM A TUBARÃO DE MESQUITA."</h3>
 
-                <p>O enredo celebra a água como elemento essencial à vida — não só biológica, mas também social, cultural e espiritual. Presente em todos os estados da natureza e em todos os aspectos da existência, ela foi base das grandes civilizações e do desenvolvimento humano.
-                <br /><br />
-                Na Baixada Fluminense, os rios moldaram cidades, histórias e identidades. Ao mesmo tempo em que alimentam o Rio de Janeiro, muitas vezes esses rios deixam seus próprios filhos — os municípios da Baixada — em situação de escassez e negligência.
-                <br /><br />
-                A Tubarão de Mesquita propõe uma reflexão poética e consciente: falar da água que constrói, nutre e conecta, mas também alertar sobre os impactos da urbanização e da industrialização que transformaram esse bem vital em um recurso ameaçado.
-                <br /><br />
-                Ao cantar os caminhos e descaminhos de seus rios, a escola reafirma a importância de preservar a água como símbolo de vida, memória e futuro da Baixada Fluminense.
+                <p>
+                    Em 2025, a Tubarão de Mesquita convida a todos a mergulhar na onda da sustentabilidade. O enredo é um chamado à consciência ambiental, à reflexão sobre nossos hábitos e à necessidade urgente de mudar para preservar a vida no planeta.
+                    <br /><br />
+                    Através da arte e da leveza do samba, a escola aborda temas como o desenvolvimento sustentável, os impactos da poluição, o papel da educação ambiental, e a importância de ações coletivas e individuais para cuidar da nossa casa comum: a Terra.
+                    <br /><br />
+                    O enredo destaca os três pilares da sustentabilidade — ambiental, social e econômico — e mostra que até mesmo o lixo pode ser reinventado como arte e transformação.
+                    <br /><br />
+                    Com olhar poético e atitude consciente, a Tubarão transforma a avenida em espaço de luta, esperança e encantamento, defendendo que agir agora é essencial para garantir o amanhã.
                 </p>
 
                 <br />
