@@ -228,7 +228,7 @@ function Navbar() {
                 <Link to="/tubarao/historia" onClick={handleCloseMenus}>HISTÓRIA</Link>
               </li>
               <li>
-                <Link to="/tubarao/ficha-tecnica" onClick={handleCloseMenus}>FICHA TÉCNICA</Link>
+                <Link to="/tubarao/fichatecnica" onClick={handleCloseMenus}>FICHA TÉCNICA</Link>
               </li>
             </ul>
           </li>
