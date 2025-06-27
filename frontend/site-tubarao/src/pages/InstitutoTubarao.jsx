@@ -89,6 +89,7 @@ function InstitutoTubarao() {
                     <br /><br />
                     Ao lado, disponibilizamos um QR Code para doações via Pix, facilitando sua contribuição de forma rápida, prática e segura. Juntos, podemos transformar ainda mais realidades!
                 </p>
+                <br /><br /><br />
             </div>
         </>
     );

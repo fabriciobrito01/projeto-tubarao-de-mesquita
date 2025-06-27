@@ -28,7 +28,7 @@ function Home() {
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 565px;
+            height: 700px;
             }
 
           .sobre-nós h2 {
@@ -98,7 +98,7 @@ function Home() {
 
           .form-contato button {
             display: block;
-            margin: 2rem auto 0 auto;
+            margin: 3rem auto 0 auto;
             align-items: center;
             justify-content: center;
             width: 70%;
