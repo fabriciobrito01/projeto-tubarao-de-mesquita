@@ -222,7 +222,7 @@ function Navbar() {
             onClick={() => setSubmenuOpen((prev) => !prev)}
             style={{ cursor: "pointer", userSelect: "none" }}
           >
-            <Link to="/">TUBARÃO</Link>
+            <Link>TUBARÃO</Link>
             <ul className="submenu">
               <li>
                 <Link to="/tubarao/historia" onClick={handleCloseMenus}>HISTÓRIA</Link>
