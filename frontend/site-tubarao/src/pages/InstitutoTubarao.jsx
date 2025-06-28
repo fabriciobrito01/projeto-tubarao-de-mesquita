@@ -28,7 +28,7 @@ function InstitutoTubarao() {
             </style>
 
             <div className="container">
-                <h1>O INSTITUTO TUBARÃO DE MESQUITA</h1>
+                <h1>O INSTITUTO</h1>
 
                 <p>
                     O Instituto Tubarão de Mesquita chega com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos. Nosso objetivo é proporcionar apoio integral às famílias, promovendo a inclusão social e o desenvolvimento da cidade de Mesquita. <br /><br />

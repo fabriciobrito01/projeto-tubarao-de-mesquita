@@ -1,6 +1,7 @@
 import { useState } from "react";
 import backgroudImage from "../assets/batismo-casaisebandeiras.jpg";
 import locationSvg from "../assets/location-svgrepo-com.svg";
+import logoTubarao from "../assets/logo-tubarao.svg";
 import mailSvg from "../assets/mail-svgrepo-com.svg";
 import Button1 from "../components/Button1";
 
@@ -105,12 +106,68 @@ function Home() {
             padding: 0.5rem 1rem;
           }
           
+          iframe {
+            width: 90%;
+            height: 260px;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 2rem;
+          }
+          .container-noticias {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            background: #222;
+            margin: 25px;
+            border-radius: 12px;
+            padding: 1rem 1rem 2rem 1rem;
+          }
+          .container-noticias h3 {
+            font-size: 1.2rem;
+            font-family: "Lexend", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: left;
+            color: #fff;
+            margin: 0.5rem;
+          }
+          .container-noticias p {
+            color: #fff;
+            font-size: 0.65rem;
+            text-align: left;
+            }
+
+          .container-noticias Button1 {
+            
+            }
+
         `}
       </style>
       <div>
-        <h1>Bem-vindo à Home!</h1>
-        <p>Esta é a página inicial do seu projeto React.</p>
+        <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!
+        </p>
+        <img src={logoTubarao} alt="" height={300} width={300}/>
 
+        <hr />
+        <br />
+
+        <h2>ÚLTIMAS NOTÍCIAS</h2>
+        <div className="container-noticias">
+          <h3>Instituto Tubarão de Mesquita é inaugurado!</h3>
+          <img src="" alt="" />
+          <p>Na ultima quinta-feira (10), o Instituto Tubarão de Mesquita foi inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
+          <Button1>Leia Mais</Button1>
+
+        </div>
         <div className="sobre-nós">
           <div className="overlay">
             <h2>SOBRE NÓS</h2>
@@ -119,7 +176,7 @@ function Home() {
               <h3><img src={locationSvg} alt="icone de localização" />Quadra Tubarão de Mesquita</h3>
               <p>Estr. Feliciano Sodré, 2325 - Centro, Mesquita - RJ, 26553-000</p>
             <div className="barracao"></div>
-              <h3><img src={locationSvg} alt="icone de localização" />Barracao Tubarão de Mesquita</h3>
+              <h3><img src={locationSvg} alt="icone de localização" />Barracão Tubarão de Mesquita</h3>
               <p>Rua Prefeito José Montes Paixão, 1265 - Centro, Mesquita - RJ, 26553-160</p>
             <div className="email"></div>
               <h3><img src={mailSvg} alt="icone de email" />Entre em contato conosco</h3>
@@ -149,6 +206,15 @@ function Home() {
               </form>
           </div>
         </div>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.60722228667!2d-43.43277644125584!3d-22.77995331458939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f72db76229%3A0x31aa4099e9cf9c91!2sG.R.E.S.%20Tubar%C3%A3o%20de%20Mesquita!5e0!3m2!1spt-BR!2sbr!4v1751064162651!5m2!1spt-BR!2sbr"
+  width="100%"
+  height="300"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
       </div>
     </>
   );
