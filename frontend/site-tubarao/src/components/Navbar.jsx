@@ -12,12 +12,21 @@ function Navbar() {
   }, [open]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   const handleCloseMenus = () => {
     setOpen(false);
@@ -87,7 +96,7 @@ function Navbar() {
           display: flex;
           gap: 1.5rem;
           list-style: none;
-          min-height: 640px;
+          height: 0;
         }
 
         .nav-links li {
@@ -146,12 +155,13 @@ function Navbar() {
           }
 
           .nav-links {
-            position: absolute;
+            position: fixed;
             top: 50px;
             right: 0;
             background: #222;
             flex-direction: column;
             width: 100%;
+            height: 100vh;
             gap: 1rem;
             display: flex;
             opacity: 0;
@@ -161,42 +171,46 @@ function Navbar() {
             padding: 0;
             text-align: center;
             justify-content: flex-start;
-            z-index: 10;
+            z-index: 2000;
             pointer-events: none;
           }
 
           .nav-links.active {
             opacity: 1;
-            max-height: 300px;
+            height: 600px;
+            max-height: 100vh;
             padding: 1rem 0;
             pointer-events: auto;
+            overflow-y: auto;
           }
 
           .nav-links li {
             padding: 0.8rem 1.5rem;
           }
 
-          .nav-links li.has-submenu .submenu {
-            list-style: none;
-            position: absolute;
-            left: 50%;
-            top: 100%;
-            transform: translateX(-50%);
-            width: 90vw;
-            min-width: 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: opacity 0.3s ease, max-height 0.3s ease;
-            pointer-events: none;
-          }
-
-          .nav-links li.has-submenu.active .submenu {
-            opacity: 1;
-            max-height: 500px;
-            pointer-events: auto;
-          }
+          @media (max-width: 768px) {
+            .nav-links li.has-submenu .submenu {
+              position: static;
+              left: auto;
+              top: auto;
+              transform: none;
+              width: 100%;
+              min-width: 0;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+              background: #222;
+              opacity: 0;
+              border-radius: 10px;
+              max-height: 0;
+              overflow: hidden;
+              transition: opacity 0.3s ease, max-height 0.3s ease;
+              pointer-events: none;
+            } 
+            .nav-links li.has-submenu.active .submenu {
+              opacity: 1;
+              max-height: 500px;
+              pointer-events: auto;
+            }
+          }   
         `}
       </style>
       <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
