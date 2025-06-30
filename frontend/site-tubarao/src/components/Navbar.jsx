@@ -156,7 +156,7 @@ function Navbar() {
 
           .nav-links {
             position: fixed;
-            top: 0;
+            top: 50px;
             left: 0;
             width: 100vw;
             height: 100vh;
@@ -177,9 +177,9 @@ function Navbar() {
 
           .nav-links.active {
             opacity: 1;
-            height: 100vh;
+            height: 600px;
             max-height: 100vh;
-            padding: 2rem 0 1rem 0;
+            padding: 1rem 0;
             pointer-events: auto;
             overflow-y: auto;
           }
@@ -251,3 +251,5 @@ function Navbar() {
     </>
   );
 }
+
+export default Navbar;
