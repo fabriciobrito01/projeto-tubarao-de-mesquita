@@ -156,12 +156,12 @@ function Navbar() {
 
           .nav-links {
             position: fixed;
-            top: 50px;
-            right: 0;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             background: #222;
             flex-direction: column;
-            width: 100%;
-            height: 100vh;
             gap: 1rem;
             display: flex;
             opacity: 0;
@@ -177,9 +177,9 @@ function Navbar() {
 
           .nav-links.active {
             opacity: 1;
-            height: 600px;
+            height: 100vh;
             max-height: 100vh;
-            padding: 1rem 0;
+            padding: 2rem 0 1rem 0;
             pointer-events: auto;
             overflow-y: auto;
           }
@@ -188,30 +188,29 @@ function Navbar() {
             padding: 0.8rem 1.5rem;
           }
 
-          @media (max-width: 768px) {
-            .nav-links li.has-submenu .submenu {
-              position: static;
-              left: auto;
-              top: auto;
-              transform: none;
-              width: 100%;
-              min-width: 0;
-              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
-              background: #222;
-              opacity: 0;
-              border-radius: 10px;
-              max-height: 0;
-              overflow: hidden;
-              transition: opacity 0.3s ease, max-height 0.3s ease;
-              pointer-events: none;
-            } 
-            .nav-links li.has-submenu.active .submenu {
-              opacity: 1;
-              max-height: 500px;
-              pointer-events: auto;
-            }
-          }   
-        `}
+          .nav-links li.has-submenu .submenu {
+            position: static;
+            left: auto;
+            top: auto;
+            transform: none;
+            width: 100%;
+            min-width: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+            background: rgba(34,34,34,0.95);
+            opacity: 0;
+            border-radius: 10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, max-height 0.3s ease;
+            pointer-events: none;
+          } 
+          .nav-links li.has-submenu.active .submenu {
+            opacity: 1;
+            max-height: 500px;
+            pointer-events: auto;
+          }
+        }
+      `}
       </style>
       <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
         <div className="logo-tubarao">
@@ -252,5 +251,3 @@ function Navbar() {
     </>
   );
 }
-
-export default Navbar;

@@ -30,12 +30,33 @@ function Home() {
     <>
       <style>
         {`
+          .historia-tubarao img {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 18px #0002;
+            margin: 1.5rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .historia-tubarao a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .historia-tubarao button {
+            display: block;
+            margin: 1.5rem 0 1rem 0;
+            width: 200px;
+          }
           .sobre-nós {
             background-image: url(${backgroudImage});
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 700px;
+            height: 600px;
             }
 
           .sobre-nós h2 {
@@ -158,18 +179,20 @@ function Home() {
         `}
       </style>
       <div>
-        <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
-        <p>
-          No coração da Baixada Fluminense, em Mesquita, nasceu mais do que uma escola de samba: surgiu um movimento transformador, que une cultura, paixão, resistência e oportunidade. O G.R.E.S. Tubarão de Mesquita é o reflexo de um sonho coletivo que decidiu fazer acontecer - e está mudando vidas desde o primeiro compasso.
-        </p>
-        <p>
-          Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
-        </p>
-        <img src={logoTubarao} alt="" height={300} width={300} />
+        <div className="historia-tubarao">
+          <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
+          <p>
+            No coração da Baixada Fluminense, em Mesquita, nasceu mais do que uma escola de samba: surgiu um movimento transformador, que une cultura, paixão, resistência e oportunidade. O G.R.E.S. Tubarão de Mesquita é o reflexo de um sonho coletivo que decidiu fazer acontecer - e está mudando vidas desde o primeiro compasso.
+          </p>
+          <p>
+            Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
+          </p>
+          <img src={logoTubarao} alt="" height={300} width={300} />
 
-        <Link to="/tubarao/historia">
-          <Button1 >Saiba mais</Button1>
-        </Link> 
+          <Link to="/tubarao/historia">
+            <Button1 >Saiba mais</Button1>
+          </Link> 
+        </div>
 
         <hr />
         <br />
