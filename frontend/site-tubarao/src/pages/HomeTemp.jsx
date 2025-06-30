@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 
 import backgroudImage from "../assets/batismo-casaisebandeiras.jpg";
 import locationSvg from "../assets/location-svgrepo-com.svg";
@@ -17,7 +18,7 @@ function Home() {
 
   function handleEnviar(e) {
     e.preventDefault();
-    const destinatario = "contato@tubaraodemesquita.com.br"; // Troque pelo seu email
+    const destinatario = "contatotubaraodemesquita@gmail.com"; 
     const assunto = encodeURIComponent("Contato pelo site");
     const corpo = encodeURIComponent(
       `Nome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`
@@ -162,6 +163,10 @@ function Home() {
           ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!
         </p>
         <img src={logoTubarao} alt="" height={300} width={300} />
+
+        <Link to="/tubarao/historia">
+          <Button1 >Saiba mais</Button1>
+        </Link> 
 
         <hr />
         <br />
