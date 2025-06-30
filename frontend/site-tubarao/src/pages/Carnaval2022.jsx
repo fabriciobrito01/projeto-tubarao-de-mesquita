@@ -33,7 +33,7 @@ function Carnaval2022() {
             }
 
             .samba-enredo {
-                font-size: 0.7rem;
+                font-size: 0.65rem;
             }
             .negrito {
                 margin-top: 2rem;
@@ -90,6 +90,19 @@ function Carnaval2022() {
                 background: #C8910F;
                 color: #fff;
                 }
+
+            .video-samba {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+                border-radius: 10px;
+            }
+            .video-samba iframe {
+                border-radius: 5px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+            }
             @media (max-width: 600px) {
                 .submenu-toggle { font-size: 1.2rem; }
                 .submenu-list button { font-size: 1rem; }
@@ -366,13 +379,17 @@ function Carnaval2022() {
     MESQUITA É UMA FESTA DE PRAÇA E DE FEIRA
     QUE BRINCA NA BEIRA DA LINHA DO TREM.
                 `}</pre>
+
+                <div className="video-samba">
+                    <iframe width="90%" height="200" src="https://www.youtube.com/embed/0JQkqXZNEJM?list=RD0JQkqXZNEJM" title="Samba vencedor de 2022. Tubarão de Mesquita" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
           </>
         )}
 
         {aba === "desfile" && (
           <>
-            <h3>Desfile</h3>
-            {/* ...conteúdo do desfile... */}
+
           </>
         )}
 
@@ -381,5 +398,3 @@ function Carnaval2022() {
   );
 }
 export default Carnaval2022;
-
-//  <h3>SAMBA-ENREDO: </h3>

@@ -110,7 +110,7 @@ function HistoriaTubarao() {
 
                 <br />
 
-                <Link to="/tubarao/enredo2022">
+                <Link to="/tubarao/carnaval2022">
                     <Button1 >Saiba mais</Button1>
                 </Link>    
 
@@ -138,7 +138,7 @@ function HistoriaTubarao() {
 
                 <br />
 
-                <Link to="/tubarao/enredo2023">
+                <Link to="/tubarao/carnaval2023">
                     <Button1 >Saiba mais</Button1>
                 </Link>    
 
@@ -164,7 +164,7 @@ function HistoriaTubarao() {
                     Ao cantar os caminhos e descaminhos de seus rios, a escola reafirma a importância de preservar a água como símbolo de vida, memória e futuro da Baixada Fluminense.
                 </p>
                 
-                <Link to="/tubarao/enredo2024">
+                <Link to="/tubarao/carnaval2024">
                     <Button1 >Saiba mais</Button1>
                 </Link> 
 
@@ -190,7 +190,7 @@ function HistoriaTubarao() {
                     Com olhar poético e atitude consciente, a Tubarão transforma a avenida em espaço de luta, esperança e encantamento, defendendo que agir agora é essencial para garantir o amanhã.
                 </p>
 
-                <Link to="/tubarao/enredo2025">
+                <Link to="/tubarao/carnaval2025">
                     <Button1 >Saiba mais</Button1>
                 </Link>    
 
