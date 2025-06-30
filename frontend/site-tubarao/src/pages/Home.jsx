@@ -159,8 +159,11 @@ function Home() {
       </style>
       <div>
         <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda quod dignissimos beatae tempore neque, voluptates non totam commodi, debitis pariatur ut distinctio harum consequuntur omnis recusandae! Eos, excepturi ex!
+        <p>
+          No coração da Baixada Fluminense, em Mesquita, nasceu mais do que uma escola de samba: surgiu um movimento transformador, que une cultura, paixão, resistência e oportunidade. O G.R.E.S. Tubarão de Mesquita é o reflexo de um sonho coletivo que decidiu fazer acontecer - e está mudando vidas desde o primeiro compasso.
+        </p>
+        <p>
+          Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
         </p>
         <img src={logoTubarao} alt="" height={300} width={300} />
 
@@ -184,9 +187,9 @@ function Home() {
             dynamicHeight={false}
           >
             <div>
-              <h3>Instituto Tubarão de Mesquita é inaugurado!</h3>
+              <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
               <img src={institutoFrente} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
-              <p>Na ultima quinta-feira (10), o Instituto Tubarão de Mesquita foi inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
+              <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
             </div>
             {/* <div>
               <img src={institutoDentro} alt="Aulão social de Jiu-Jitsu no Instituto Tubarão de Mesquita" />

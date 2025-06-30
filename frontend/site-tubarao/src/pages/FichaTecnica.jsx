@@ -61,16 +61,6 @@ function FichaTecnica() {
         <p>Dib Elias</p>
       </div>
       <div className="container">
-        <h2>Diretor de Carnaval</h2>
-        <img/>
-        <p>Nome</p>
-      </div>
-      <div className="container">
-        <h2>Carnavalesco</h2>
-        <img/>
-        <p>Nome</p>
-      </div>
-      <div className="container">
         <h2>Interprete</h2>
         <img src={interprete} alt="Interprete" className="ficha-tecnica-img" />
         <p>Ito Melodia</p>
@@ -81,14 +71,14 @@ function FichaTecnica() {
         <p>Michelzinho RP</p>
       </div>
       <div className="container">
-        <h2>Rainha</h2>
+        <h2>Diretor de barracão</h2>
         <img/>
-        <p>Nome</p>
+        <p>Eduardo dos Anjos</p>
       </div>
       <div className="container">
-        <h2>Mestre-Sala e Porta-Bandeira</h2>
+        <h2>Comissão de frente</h2>
         <img/>
-        <p>Nomes</p>
+        <p>Flávia Leal</p>
       </div>
     </>
   );
