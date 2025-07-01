@@ -98,9 +98,9 @@ a {
     height: 220px;
 }
 
-.carousel-container button {
+.control-arrow{
     margin-top: 1rem;
-    width: 20%;
+    width: 15%;
 }
 
 @media (min-width: 1024px) {
@@ -143,11 +143,6 @@ a {
 
     .carousel-container .carousel .slide img {
         height: 350px;
-    }
-
-    .carousel-container button {
-        margin-top: 1.5rem;
-        width: 10%;
     }
 
 }
