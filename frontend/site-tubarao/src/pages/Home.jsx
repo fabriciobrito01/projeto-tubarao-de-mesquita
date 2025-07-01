@@ -178,14 +178,20 @@ function Home() {
           }
 
           @media (min-width: 1024px) {
+            .tubarao-p-img{
+              display: flex;
+              flex-direction: row-reverse;
+            }
+
             .historia-tubarao h1 {
-              padding-top: 90px;
+              padding-top: 5rem;
               font-size: 2rem;
             }
 
             .historia-tubarao p {
               font-size: 1.2rem;
               display: flex;
+              text-align: left;
             }
 
             .sobre-nós {
@@ -216,6 +222,10 @@ function Home() {
               padding-bottom: 1.2rem;
             }
 
+            .sobre-nós button {
+              width: 30%;
+            }
+
             .form-contato {
               width: 100%;
               display: flex;
@@ -223,23 +233,54 @@ function Home() {
               align-items: center;
               padding-left: 0;
             }
-            .form-contato input,
-            .form-contato textarea {
+
+            iframe{
+              width: 100vw;
+              max-width: 97%;
+              height: 450px;
+              border-radius: 1rem;
+              padding: 0;
+              box-shadow: 0 4px 18px #0009;
+              // margin: 0;
+              }
+
+            .carousel-container {
+              display: flex;
+              width: 100%;
+              max-width: 900px;
+              margin: 1.8rem auto;
+            }
+
+            .carousel-container button {
+              margin-top: 1.5rem;
+              width: 25%;
+            }
+
+            .carousel-container .carousel .slide img {
+              border-radius: 10px;
+              width: 50%;
+              height: 270px;
+            }
+
+            .carousel-container p {
+              font-size: 0.9rem;
+              padding-top: 1.8rem;  
+              padding-bottom: 2rem;
             }
           }
         `}
       </style>
       <div className="container">
         <div className="historia-tubarao">
-          <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
-          <p>
-            No coração da Baixada Fluminense, em Mesquita, nasceu mais do que uma escola de samba: surgiu um movimento transformador, que une cultura, paixão, resistência e oportunidade. O G.R.E.S. Tubarão de Mesquita é o reflexo de um sonho coletivo que decidiu fazer acontecer - e está mudando vidas desde o primeiro compasso.
-          </p>
-          <p>
-            Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
-          </p>
-          <img src={logoTubarao} alt="" height={300} width={300} />
-
+            <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
+          <div className="tubarao-p-img">
+            <p>
+              No coração da Baixada Fluminense, em Mesquita, nasceu mais do que uma escola de samba: surgiu um movimento transformador, que une cultura, paixão, resistência e oportunidade. O G.R.E.S. Tubarão de Mesquita é o reflexo de um sonho coletivo que decidiu fazer acontecer - e está mudando vidas desde o primeiro compasso.
+            <br /> <br />
+              Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
+            </p>
+            <img src={logoTubarao} alt="" height={300} width={300} />
+          </div>
           <Link to="/tubarao/historia">
             <Button1 >Saiba mais</Button1>
           </Link> 
@@ -315,7 +356,7 @@ function Home() {
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.60722228667!2d-43.43277644125584!3d-22.77995331458939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f72db76229%3A0x31aa4099e9cf9c91!2sG.R.E.S.%20Tubar%C3%A3o%20de%20Mesquita!5e0!3m2!1spt-BR!2sbr!4v1751064162651!5m2!1spt-BR!2sbr"
-        width="100%"
+        width="340"
         height="300"
         style={{ border: 0 }}
         allowFullScreen=""
