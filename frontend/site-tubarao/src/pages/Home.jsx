@@ -176,6 +176,18 @@ function Home() {
             padding: 0.5rem;
             border-radius: 2rem;
           }
+
+          @media (min-width: 1024px) {
+            .historia-tubarao h1 {
+              padding-top: 90px;
+              font-size: 2rem;
+            }
+
+            .historia-tubarao p {
+              font-size: 1.2rem;
+              display: flex;
+            }
+          }
         `}
       </style>
       <div>

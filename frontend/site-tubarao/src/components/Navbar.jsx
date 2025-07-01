@@ -113,7 +113,6 @@ function Navbar() {
           allign-items: center;
         }
 
-        /* Submenu absoluto */
         .nav-links li.has-submenu .submenu {
           flex-direction: column;
           position: absolute;
@@ -140,7 +139,6 @@ function Navbar() {
           white-space: nowrap;
         }
 
-        /* Hover para desktop */
         @media (min-width: 769px) {
           .nav-links li.has-submenu:hover .submenu {
             opacity: 1;
@@ -205,6 +203,53 @@ function Navbar() {
             pointer-events: none;
           } 
           .nav-links li.has-submenu.active .submenu {
+            opacity: 1;
+            max-height: 500px;
+            pointer-events: auto;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .navbar {
+            padding: 1.8rem 3rem 2rem 0;
+          }
+          .nav-links {
+            gap: 2.5rem;
+          }
+          .nav-links li a {
+            font-size: 1.25rem;
+            padding: 0.5rem 0;
+            display: inline-block;
+          }
+          .logo-tubarao img {
+            height: 120px;
+            width: auto;
+          }
+          .nav-links {
+            position: static;
+            flex-direction: row;
+            height: auto;
+            max-height: none;
+            opacity: 1;
+            pointer-events: auto;
+            overflow: visible;
+            justify-content: flex-end;
+          }
+          .nav-links li.has-submenu .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 0.5rem 1rem;
+            border-radius: 0 0 10px 10px;
+            min-width: 180px;
+            background: #222;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            pointer-events: none;
+            transition: opacity 0.3s ease, max-height 0.3s ease;
+          }
+          .nav-links li.has-submenu:hover .submenu {
             opacity: 1;
             max-height: 500px;
             pointer-events: auto;
