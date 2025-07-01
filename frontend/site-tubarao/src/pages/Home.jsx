@@ -18,7 +18,7 @@ function Home() {
 
   function handleEnviar(e) {
     e.preventDefault();
-    const destinatario = "contatotubaraodemesquita@gmail.com"; 
+    const destinatario = "contatotubaraodemesquita@gmail.com";
     const assunto = encodeURIComponent("Contato pelo site");
     const corpo = encodeURIComponent(
       `Nome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`
@@ -29,7 +29,19 @@ function Home() {
   return (
     <>
       <style>
-        {`
+        {`            
+          .historia-tubarao {
+            margin-bottom: 2.5rem;
+          }
+
+          .carousel-container {
+            margin-bottom: 2.5rem;
+          }
+
+          .sobre-nós {
+            margin-top: 2.5rem;
+          }
+
           .historia-tubarao img {
             width: 270px;
             height: 270px;
@@ -41,27 +53,30 @@ function Home() {
             margin-left: auto;
             margin-right: auto;
           }
+
           .historia-tubarao a {
             display: flex;
             align-items: center;
             justify-content: center;
           }
+
           .historia-tubarao button {
             display: block;
             margin: 1.5rem 0 1rem 0;
             width: 200px;
           }
+
           .sobre-nós {
             background-image: url(${backgroudImage});
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 600px;
-            }
+            height: 630px;
+          }
 
           .sobre-nós h2 {
             text-align: left;
-            padding: 0.5rem;
+            margin: 1rem 0 1rem 0;
             }
 
           .sobre-nós h3 {
@@ -151,10 +166,10 @@ function Home() {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 2rem 1rem 2rem 1rem;
             background: #222;
             margin: 25px;
             border-radius: 12px;
+            
           }
           .carousel-container h3 {
             font-size: 1.2rem;
@@ -163,18 +178,17 @@ function Home() {
             font-style: normal;
             text-align: left;
             color: #fff;
-            margin: 0.5rem;
           }
           .carousel-container p {
             color: #fff;
             font-size: 0.65rem;
             text-align: left;
-            padding-bottom: 4rem;
+            padding-bottom: 3rem;
             }
 
           .carousel-container img {
-            padding: 0.5rem;
-            border-radius: 2rem;
+            border-radius: 10px;
+            padding: 2.2rem;
           }
 
           @media (min-width: 1024px) {
@@ -194,7 +208,7 @@ function Home() {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 600px;
+                min-height: 670px;
                 background-image: url(${backgroudImage});
                 background-size: cover;
                 background-position: center;
@@ -202,6 +216,7 @@ function Home() {
               }
               
             .sobre-nós .overlay {
+              padding-top: 1.8rem;
               box-shadow: 0 4px 24px #0006;
               display: flex;
               flex-direction: column;
@@ -211,9 +226,9 @@ function Home() {
             .sobre-nós .overlay-content {
               display: flex;
               width: 40%;
+              background-color: rgba(0, 0, 0, 0.6);
               flex-direction: column;
               align-items: center;
-              background: rgba(0,0,0,0.7); /* opcional, para destacar */
               border: 1px solid #CB910F;
               padding-bottom: 1.2rem;
             }
@@ -254,8 +269,8 @@ function Home() {
 
             .carousel-container .carousel .slide img {
               border-radius: 10px;
-              width: 50%;
-              height: 270px;
+              width: 80%;
+              height: 300px;
             }
 
             .carousel-container p {
@@ -268,22 +283,24 @@ function Home() {
       </style>
       <div className="container">
         <div className="historia-tubarao">
-            <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
+          <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
           <div className="tubarao-p-img">
+            <div className="historia-text">
             <p>
               No coração da Baixada Fluminense, em Mesquita, nasceu mais do que uma escola de samba: surgiu um movimento transformador, que une cultura, paixão, resistência e oportunidade. O G.R.E.S. Tubarão de Mesquita é o reflexo de um sonho coletivo que decidiu fazer acontecer - e está mudando vidas desde o primeiro compasso.
-            <br /> <br />
+            </p>
+            <p>
               Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
             </p>
+            </div>
             <img src={logoTubarao} alt="" height={300} width={300} />
           </div>
           <Link to="/tubarao/historia">
             <Button1 >Saiba mais</Button1>
-          </Link> 
+          </Link>
         </div>
 
         <hr />
-        <br />
 
         <h2>ÚLTIMAS NOTÍCIAS</h2>
         <div className="carousel-container">
@@ -298,15 +315,17 @@ function Home() {
             dynamicHeight={false}
           >
             <div>
-              <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
-              <img src={institutoFrente} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
-              <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
+              <div className="noticias-content">
+                <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
+                <img src={institutoFrente} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
+                <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
+              </div>
             </div>
             {/* <div>
               <img src={institutoDentro} alt="Aulão social de Jiu-Jitsu no Instituto Tubarão de Mesquita" />
             </div> */}
           </Carousel>
-              <Button1>Leia Mais</Button1>
+          <Button1>Leia Mais</Button1>
         </div>
 
       </div>
@@ -358,7 +377,7 @@ function Home() {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-      /> 
+      />
     </>
   );
 }

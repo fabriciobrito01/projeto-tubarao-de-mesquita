@@ -24,14 +24,7 @@ function Carnaval2023() {
 
   return (
     <>
-        <style>{`
-            p {
-                text-align: justify;
-                text-indent: 2em;
-                margin-bottom: 0rem;
-                margin-top: 0rem;
-            }
-                
+        <style>{` 
             .negrito {
                 font-size: 0.8rem;
                 margin-top: 2rem;

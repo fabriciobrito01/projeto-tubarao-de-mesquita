@@ -25,23 +25,18 @@ function Carnaval2022() {
   return (
     <>
         <style>{`
-            p {
-                text-align: justify;
-                text-indent: 2em;
-                margin-bottom: 0rem;
-                margin-top: 0rem;
-            }
-
             .negrito {
                 margin-top: 2rem;
                 margin-bottom: 2rem;
                 font-weight: bold;
-                }
+            }
+
             .submenu-dropdown {
                 position: relative;
                 display: inline-block;
                 margin-bottom: 2rem;
-                }
+            }
+
             .submenu-toggle {
                 font-size: 2rem;
                 font-weight: bold;
@@ -49,15 +44,16 @@ function Carnaval2022() {
                 background: none;
                 border: none;
                 cursor: pointer;
-                padding: 0.2em 0.7em;
                 transition: color 0.2s;
                 border-radius: 8px;
-                }
+            }
+
             .submenu-toggle.open,
             .submenu-toggle:focus {
                 color: #CB910F;
                 outline: none;
-                }
+            }
+
             .submenu-list {
                 display: ${open ? "block" : "none"};
                 position: absolute;
@@ -66,12 +62,12 @@ function Carnaval2022() {
                 background: #fff;
                 box-shadow: 0 4px 16px rgba(0,0,0,0.18);
                 border-radius: 10px;
-                min-width: 220px;
+                min-width: 300px;
                 z-index: 10;
-                padding: 0.5rem 0;
-                }
+            }
+
             .submenu-list button {
-                width: 100%;
+                width: 90%;
                 background: none;
                 border: none;
                 font-size: 1.3rem;
@@ -81,12 +77,14 @@ function Carnaval2022() {
                 padding: 0.7em 1.2em;
                 cursor: pointer;
                 transition: background 0.2s, color 0.2s;
-                }
+            }
+
             .submenu-list button.active,
             .submenu-list button:hover {
                 background: #C8910F;
                 color: #fff;
-                }
+                max-width: 90%;
+            }
 
             .video-samba {
                 display: flex;
@@ -96,14 +94,16 @@ function Carnaval2022() {
                 margin-bottom: 2rem;
                 border-radius: 10px;
             }
+
             .video-samba iframe {
                 border-radius: 5px;
                 box-shadow: 0 4px 16px rgba(0,0,0,0.7);
             }
+
             @media (max-width: 600px) {
                 .submenu-toggle { font-size: 1.2rem; }
                 .submenu-list button { font-size: 1rem; }
-                }
+            }
 
         `}
         </style>

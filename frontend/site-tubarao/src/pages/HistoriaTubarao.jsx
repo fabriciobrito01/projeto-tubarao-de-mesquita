@@ -47,10 +47,7 @@ function HistoriaTubarao() {
                     A Escola desenvolve os seguintes projetos sociais: Oficina de percussão, corte e costura, adereços, pintura em tela, aulas de Jiu-jítsu, Muay Thai, Breaking, funcional. Hoje, O Grêmio Recreativo Escola de Samba Tubarão de Mesquita é exemplo de responsabilidade, respeito e confiabilidade, valores que levaram a seu reconhecimento dentro e fora dos limites do Município de Mesquita. Sabendo que o que tem em termos de projetos sociais ainda é muito pouco, a escola trabalha para ampliar suas condições e, com isso, fazer muito mais. Possuindo a coragem, a força e a determinação necessárias para transformar vidas e realizar sonhos através do samba, se faz uma voz poderosa na luta contra a desigualdade e qualquer tipo de preconceito. É esse seu maior objetivo, fazer da Escola de Samba o caminho para a melhoria da qualidade de vida de muitos de seus integrantes e até mesmo da comunidade ao redor, com a consciência de que, através de seus projetos sociais, a Tubarão de Mesquita constrói trajetórias, apresenta alternativas, abre caminhos, resgata sonhos e vidas.
                 </p>
                 
-
-                <br />
                 <hr />
-                <br />
 
                 <h2>BEIJA-FLOR DE NILÓPOLIS BATIZA O G.R.E.S. TUBARÃO DE MESQUITA</h2>
 
@@ -59,7 +56,6 @@ function HistoriaTubarao() {
                     Nossa comunidade se uniu em uma grande festa, onde o samba, a alegria e o respeito pela tradição se destacaram. Após a Beija-Flor, com toda a sua grandiosidade, estender a mão para nós, fomos tomados por uma sensação de honra e responsabilidade.
                     Esse batismo representou mais do que um simples nome; foi um marco de reconhecimento e de incentivo para seguir em frente. A partir daquele dia, nos tornamos ainda mais fortes, com o compromisso de honrar o legado das grandes escolas de samba da Baixada, sempre com muito orgulho e dedicação.
                 </p>
-                <br />
 
                 <div className="carousel-container">
                     <Carousel
@@ -96,14 +92,11 @@ function HistoriaTubarao() {
                     </Carousel>
                 </div>
 
-                <br />
                 <hr />
-                <br />
                 
                 <div className="carnavais">
                     <h2>CARNAVAL 2022</h2>
 
-                    <br />
 
                     <h3>ENREDO: "MESQUITA FUTEBOL CLUBE - DE BARÃO À TUBARÃO."</h3>
 
@@ -123,13 +116,9 @@ function HistoriaTubarao() {
                         <Button1 >Saiba mais</Button1>
                     </Link>    
 
-                    <br />
                     <hr />
-                    <br />
-
                     <h2>CARNAVAL 2023</h2>
 
-                    <br />
 
                     <h3>ENREDO: "LEVANTA BAIXADA! SAMBA SUA ARTE!"</h3>
 
@@ -147,19 +136,13 @@ function HistoriaTubarao() {
                     </p>
                     
 
-                    <br />
-
                     <Link to="/tubarao/carnaval2023">
                         <Button1 >Saiba mais</Button1>
                     </Link>    
 
-                    <br />
                     <hr />
-                    <br />
 
                     <h2>CARNAVAL 2024</h2>
-
-                    <br />
 
                     <h3>ENREDO: "A ÁGUA DE NOSSOS RIOS DESÁGUA NUM RIO MAIOR."</h3>
 
@@ -180,13 +163,9 @@ function HistoriaTubarao() {
                         <Button1 >Saiba mais</Button1>
                     </Link> 
 
-                    <br />
                     <hr />
-                    <br />
 
                     <h2>CARNAVAL 2025</h2>
-
-                    <br />
 
                     <h3>ENREDO: "REPENSE, REFLITA, RECICLA, VEM NA ONDA DA SUSTENTABILIDADE COM A TUBARÃO DE MESQUITA."</h3>
 
@@ -206,8 +185,6 @@ function HistoriaTubarao() {
                     <Link to="/tubarao/carnaval2025">
                         <Button1 >Saiba mais</Button1>
                     </Link>    
-
-                    <br />
                 </div>
 
             </div>
