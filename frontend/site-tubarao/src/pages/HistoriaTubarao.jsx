@@ -22,6 +22,7 @@ function HistoriaTubarao() {
                 margin-bottom: 1rem;
                 width: 180px;
             }
+
             `}
             </style>
 
@@ -30,17 +31,24 @@ function HistoriaTubarao() {
 
                 <p>
                     Da ideia de se trazer algo novo para o Município de Mesquita, algo que transformasse e impulsionasse o desenvolvimento cultural e, consequentemente, social dessa pequena cidade, surgiu um sonho, o sonho de fazer acontecer.
-                    Apaixonados por samba, dois grandes amigos viram nele a possibilidade de transformar esse sonho em realidade, é nesse momento que nasce o G.R.E.S. Tubarão de Mesquita. <br /><br />
+                    Apaixonados por samba, dois grandes amigos viram nele a possibilidade de transformar esse sonho em realidade, é nesse momento que nasce o G.R.E.S. Tubarão de Mesquita.
+                </p>
+                <p>
                     A escola foi fundada em 05 de março de 2021, no município de Mesquita, pelo então Presidente Paulo Sergio Delfino Machado e o Presidente de Honra Dib de Brito Elias. A Tubarão de Mesquita vem acontecendo e fazendo acontecer para seu Município. Apesar de ter sido fundada em março 2021, a escola só iniciou suas atividades em outubro do mesmo ano, quando começaram a ser formadas as divisões da escola. Nasceu em um clube centenário da cidade de Mesquita, o Mesquita Futebol Clube, que tem como mascote o tubarão. O clube é conhecido como “Tubarão da Baixada”, e para homenagear o espaço onde exercem suas atividades, a escola foi batizada como “Tubarão de Mesquita”, exaltando o clube, resgatando suas atividades socias e valorizando o município.
-                    <br /><br />
+                </p>
+                <p>
                     O seu primeiro enredo homenageou o Mesquita Futebol Clube e a cidade, com o nome “Mesquita Futebol Clube: De Barão a Tubarão”. O primeiro ano foi muito complexo para a escola, visto que não tinham experiência, mas em 5 meses foram para a avenida levando 450 desfilantes. Saíram do grupo de avaliação como vice-campeões, perdendo por apenas 1 décimo da primeira colocada. Desde o início, procuram abordar temas que exaltem a Baixada Fluminense e que criem a ideia de pertencimento do público a nossa escola, o que fez com que crescessem tão rápido. O que era um desafio no primeiro ano, torna-se uma realidade no segundo carnaval. Em seu segundo carnaval, com o objetivo de exaltar a Baixada e sua arte, o enredo foi “Levanta Baixada: Samba sua arte!”, o que os levou a ser a escola campeã de seu dia de desfile. A escola foi ganhando corpo. A Beija-Flor de Nilópolis abraçou seu trabalho e se tornou a madrinha da escola.
-                    <br /><br />
+                </p>
+                <p>
                     Nossa Senhora das Graças, padroeira de nossa cidade foi escolhida como protetora da escola. Através disso, a escola ganhou mais visibilidade e foi atingindo o objetivo de criar nos Mesquitenses um sentimento de pertencimento.
-                    <br /><br />
+                </p>
+                <p>
                     Em seu terceiro ano de desfile, tiveram um crescimento significativo, e seguiram com a mesma ideia de exaltação à Baixada Fluminense, criando o enredo: “A água de nossos rios deságua num rio maior”. Foi desafiador realizar um carnaval tão grande. Tiveram sucesso em seu desfile, embora tenham ficado em terceiro lugar e permanecido na série prata. A escola sai de seu terceiro carnaval “consagrada”, cheia de elogios, pois estavam competindo com escolas antigas, tradicionalíssimas, e conseguiram fazer um belíssimo carnaval. E assim, a escola segue em direção ao seu próximo carnaval. A Tubarão de Mesquita é uma Escola de Samba compromissada em transformar, através de seus projetos sociais, a vida das pessoas.
-                    <br /><br />
+                </p>
+                <p>
                     A Escola desenvolve os seguintes projetos sociais: Oficina de percussão, corte e costura, adereços, pintura em tela, aulas de Jiu-jítsu, Muay Thai, Breaking, funcional. Hoje, O Grêmio Recreativo Escola de Samba Tubarão de Mesquita é exemplo de responsabilidade, respeito e confiabilidade, valores que levaram a seu reconhecimento dentro e fora dos limites do Município de Mesquita. Sabendo que o que tem em termos de projetos sociais ainda é muito pouco, a escola trabalha para ampliar suas condições e, com isso, fazer muito mais. Possuindo a coragem, a força e a determinação necessárias para transformar vidas e realizar sonhos através do samba, se faz uma voz poderosa na luta contra a desigualdade e qualquer tipo de preconceito. É esse seu maior objetivo, fazer da Escola de Samba o caminho para a melhoria da qualidade de vida de muitos de seus integrantes e até mesmo da comunidade ao redor, com a consciência de que, através de seus projetos sociais, a Tubarão de Mesquita constrói trajetórias, apresenta alternativas, abre caminhos, resgata sonhos e vidas.
                 </p>
+                
 
                 <br />
                 <hr />
@@ -102,9 +110,11 @@ function HistoriaTubarao() {
 
                 <p>
                     O enredo apresenta a história de Mesquita, município da Baixada Fluminense, desde os tempos coloniais até sua emancipação em 1999. Surgida nas terras do antigo Barão de Mesquita, a região passou por ciclos de cana-de-açúcar, laranja, industrialização e urbanização, moldando sua identidade ao longo do tempo.
-                    <br /><br />
+                </p>
+                <p>
                     Paralelamente, nasce o Mesquita Futebol Clube, fundado em 1920 por operários locais. Com garra, energia e coragem, o time conquista seu espaço e ganha o apelido de "Tubarão", símbolo da força mesquitense nos gramados.
-                    <br /><br />
+                </p>
+                <p>
                     Hoje, essa mesma força se transforma em samba: nasce o Grêmio Recreativo Escola de Samba Tubarão de Mesquita, novo símbolo cultural da cidade, que leva para a avenida o orgulho e a história do seu povo.
                 </p>
 
@@ -128,13 +138,17 @@ function HistoriaTubarao() {
 
                 <p>
                     O enredo parte do marco histórico da inauguração da primeira ferrovia do Brasil, em 1854, na atual Magé, para contar como os trilhos do trem transformaram a Baixada Fluminense, conectando passado, presente e cultura.
-                    <br /><br />
+                </p>
+                <p>
                     De terras férteis e laranjais perfumados ao crescimento urbano acelerado, a Baixada enfrentou desafios como a violência e a precariedade urbana. Ainda assim, resistiu — e resistiu com arte.
-                    <br /><br />
+                </p>
+                <p>
                     É na força da criação, na riqueza cultural espalhada por seus 13 municípios, que a Baixada se reinventa e se afirma. Com teatros, bibliotecas, cineclubes e artistas reconhecidos, a região pulsa criatividade, orgulho e transformação.
-                    <br /><br />
+                </p>
+                <p>
                     O GRES Tubarão de Mesquita pinta essa história como uma aquarela vibrante, celebrando a cultura viva da Baixada e convidando todos a seguirem os trilhos da antiga locomotiva Baronesa, em uma viagem de descobertas e encantos.
                 </p>
+                
 
                 <br />
 
@@ -156,11 +170,14 @@ function HistoriaTubarao() {
 
                 <p>
                     O enredo celebra a água como elemento essencial à vida — não só biológica, mas também social, cultural e espiritual. Presente em todos os estados da natureza e em todos os aspectos da existência, ela foi base das grandes civilizações e do desenvolvimento humano.
-                    <br /><br />
+                </p>
+                <p>
                     Na Baixada Fluminense, os rios moldaram cidades, histórias e identidades. Ao mesmo tempo em que alimentam o Rio de Janeiro, muitas vezes esses rios deixam seus próprios filhos — os municípios da Baixada — em situação de escassez e negligência.
-                    <br /><br />
+                </p>
+                <p>
                     A Tubarão de Mesquita propõe uma reflexão poética e consciente: falar da água que constrói, nutre e conecta, mas também alertar sobre os impactos da urbanização e da industrialização que transformaram esse bem vital em um recurso ameaçado.
-                    <br /><br />
+                </p>
+                <p>
                     Ao cantar os caminhos e descaminhos de seus rios, a escola reafirma a importância de preservar a água como símbolo de vida, memória e futuro da Baixada Fluminense.
                 </p>
                 
@@ -182,11 +199,14 @@ function HistoriaTubarao() {
 
                 <p>
                     Em 2025, a Tubarão de Mesquita convida a todos a mergulhar na onda da sustentabilidade. O enredo é um chamado à consciência ambiental, à reflexão sobre nossos hábitos e à necessidade urgente de mudar para preservar a vida no planeta.
-                    <br /><br />
+                </p>
+                <p>
                     Através da arte e da leveza do samba, a escola aborda temas como o desenvolvimento sustentável, os impactos da poluição, o papel da educação ambiental, e a importância de ações coletivas e individuais para cuidar da nossa casa comum: a Terra.
-                    <br /><br />
+                </p>
+                <p>
                     O enredo destaca os três pilares da sustentabilidade — ambiental, social e econômico — e mostra que até mesmo o lixo pode ser reinventado como arte e transformação.
-                    <br /><br />
+                </p>
+                <p>
                     Com olhar poético e atitude consciente, a Tubarão transforma a avenida em espaço de luta, esperança e encantamento, defendendo que agir agora é essencial para garantir o amanhã.
                 </p>
 

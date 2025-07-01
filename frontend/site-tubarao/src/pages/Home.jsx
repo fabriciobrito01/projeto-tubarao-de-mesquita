@@ -183,13 +183,9 @@ function Home() {
               flex-direction: row-reverse;
             }
 
-            .historia-tubarao h1 {
-              padding-top: 5rem;
-              font-size: 2rem;
-            }
+            .historia-tubarao 
 
             .historia-tubarao p {
-              font-size: 1.2rem;
               display: flex;
               text-align: left;
             }

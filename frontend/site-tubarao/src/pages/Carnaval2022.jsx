@@ -32,9 +32,6 @@ function Carnaval2022() {
                 margin-top: 0rem;
             }
 
-            .samba-enredo {
-                font-size: 0.65rem;
-            }
             .negrito {
                 margin-top: 2rem;
                 margin-bottom: 2rem;
@@ -107,6 +104,7 @@ function Carnaval2022() {
                 .submenu-toggle { font-size: 1.2rem; }
                 .submenu-list button { font-size: 1rem; }
                 }
+
         `}
         </style>
         <div className="container">

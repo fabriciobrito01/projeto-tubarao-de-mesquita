@@ -79,6 +79,9 @@ a {
     padding: 0.5rem;
 }
 
+.samba-enredo {
+    font-size: 0.65rem;
+}
 
 .carousel-container {
     max-width: 400px;
@@ -95,10 +98,56 @@ a {
     height: 220px;
 }
 
+.carousel-container button {
+    margin-top: 1rem;
+    width: 20%;
+}
+
 @media (min-width: 1024px) {
     .container {
         max-width: 50%;
         margin: 0 auto;
+    }
+
+    h1 {
+        padding-top: 5rem;
+        font-size: 2rem;
+        }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+        text-indent: 2rem;
+      }
+
+    .samba-enredo {
+        font-size: 1.1rem;
+    }
+    
+    .video-samba iframe {
+        width: 900px;
+        height: 500px;
+    }            
+
+    .carousel-container {
+        max-width: 700px;
+    }
+
+    .carousel-container .carousel .slide img {
+        height: 350px;
+    }
+
+    .carousel-container button {
+        margin-top: 1.5rem;
+        width: 5%;
     }
 
 }

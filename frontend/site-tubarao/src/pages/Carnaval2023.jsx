@@ -31,10 +31,7 @@ function Carnaval2023() {
                 margin-bottom: 0rem;
                 margin-top: 0rem;
             }
-
-            .samba-enredo {
-                font-size: 0.65rem;
-            }
+                
             .negrito {
                 font-size: 0.8rem;
                 margin-top: 2rem;
@@ -42,11 +39,13 @@ function Carnaval2023() {
                 font-weight: bold;
                 white-space: pre-wrap;
                 }
+
             .submenu-dropdown {
                 position: relative;
                 display: inline-block;
                 margin-bottom: 2rem;
                 }
+
             .submenu-toggle {
                 font-size: 2rem;
                 font-weight: bold;
@@ -58,11 +57,13 @@ function Carnaval2023() {
                 transition: color 0.2s;
                 border-radius: 8px;
                 }
+
             .submenu-toggle.open,
             .submenu-toggle:focus {
                 color: #CB910F;
                 outline: none;
                 }
+
             .submenu-list {
                 display: ${open ? "block" : "none"};
                 position: absolute;
@@ -75,6 +76,7 @@ function Carnaval2023() {
                 z-index: 10;
                 padding: 0.5rem 0;
                 }
+
             .submenu-list button {
                 width: 100%;
                 background: none;
@@ -87,6 +89,7 @@ function Carnaval2023() {
                 cursor: pointer;
                 transition: background 0.2s, color 0.2s;
                 }
+
             .submenu-list button.active,
             .submenu-list button:hover {
                 background: #C8910F;
@@ -109,6 +112,13 @@ function Carnaval2023() {
                 .submenu-toggle { font-size: 1.2rem; }
                 .submenu-list button { font-size: 1rem; }
                 }
+
+            @media (min-width: 1024px) {
+                .negrito {
+                    font-size: 1.2rem;
+                    }
+                }
+            }
         `}
         </style>
         <div className="container">

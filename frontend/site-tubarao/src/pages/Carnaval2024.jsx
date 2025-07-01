@@ -32,9 +32,6 @@ function Carnaval2024() {
                 margin-top: 0rem;
             }
 
-            .samba-enredo {
-                font-size: 0.65rem;
-            }
             .negrito {
                 font-size: 0.8rem;
                 margin-top: 2rem;
