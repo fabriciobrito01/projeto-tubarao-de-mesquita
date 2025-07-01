@@ -6,6 +6,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = window.innerWidth < 769;
 
   useEffect(() => {
     if (!open) setSubmenuOpen(false);
@@ -236,6 +237,7 @@ function Navbar() {
             justify-content: flex-end;
           }
           .nav-links li.has-submenu .submenu {
+            list-style: none;
             position: absolute;
             top: 100%;
             left: 0;
@@ -277,7 +279,7 @@ function Navbar() {
           <li><Link to="/cadastro" onClick={handleCloseMenus}>CADASTRO</Link></li>
           <li
             className={`has-submenu${submenuOpen ? " active" : ""}`}
-            onClick={() => setSubmenuOpen((prev) => !prev)}
+            onClick={isMobile ? () => setSubmenuOpen((prev) => !prev) : undefined}
             style={{ cursor: "pointer", userSelect: "none" }}
           >
             <Link>TUBARÃO</Link>
