@@ -94,3 +94,11 @@ a {
     object-fit: cover;
     height: 220px;
 }
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+}

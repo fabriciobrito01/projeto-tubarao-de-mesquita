@@ -187,10 +187,49 @@ function Home() {
               font-size: 1.2rem;
               display: flex;
             }
+
+            .sobre-nós {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 600px;
+                background-image: url(${backgroudImage});
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+              }
+              
+            .sobre-nós .overlay {
+              box-shadow: 0 4px 24px #0006;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              }
+
+            .sobre-nós .overlay-content {
+              display: flex;
+              width: 40%;
+              flex-direction: column;
+              align-items: center;
+              background: rgba(0,0,0,0.7); /* opcional, para destacar */
+              border: 1px solid #CB910F;
+              padding-bottom: 1.2rem;
+            }
+
+            .form-contato {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding-left: 0;
+            }
+            .form-contato input,
+            .form-contato textarea {
+            }
           }
         `}
       </style>
-      <div>
+      <div className="container">
         <div className="historia-tubarao">
           <h1>CONHEÇA O TUBARÃO DA BAIXADA!</h1>
           <p>
@@ -236,40 +275,42 @@ function Home() {
       </div>
       <div className="sobre-nós">
         <div className="overlay">
-          <h2>SOBRE NÓS</h2>
-          <hr />
-          <div className="quadra"></div>
-          <h3><img src={locationSvg} alt="icone de localização" />Quadra Tubarão de Mesquita</h3>
-          <p>Estr. Feliciano Sodré, 2325 - Centro, Mesquita - RJ, 26553-000</p>
-          <div className="barracao"></div>
-          <h3><img src={locationSvg} alt="icone de localização" />Barracão Tubarão de Mesquita</h3>
-          <p>Rua Prefeito José Montes Paixão, 1265 - Centro, Mesquita - RJ, 26553-160</p>
-          <div className="email"></div>
-          <h3><img src={mailSvg} alt="icone de email" />Entre em contato conosco</h3>
-          <form className="form-contato" onSubmit={handleEnviar}>
-            <input
-              type="text"
-              placeholder="Seu nome"
-              value={nome}
-              onChange={e => setNome(e.target.value)}
-              required
-            />
-            <input
-              type="email"
-              placeholder="Seu email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-            />
-            <textarea
-              placeholder="Sua mensagem"
-              value={mensagem}
-              onChange={e => setMensagem(e.target.value)}
-              rows={4}
-              required
-            />
-            <Button1 type="submit">Enviar email</Button1>
-          </form>
+          <div className="overlay-content">
+            <h2>SOBRE NÓS</h2>
+            <hr />
+            <div className="quadra"></div>
+            <h3><img src={locationSvg} alt="icone de localização" />Quadra Tubarão de Mesquita</h3>
+            <p>Estr. Feliciano Sodré, 2325 - Centro, Mesquita - RJ, 26553-000</p>
+            <div className="barracao"></div>
+            <h3><img src={locationSvg} alt="icone de localização" />Barracão Tubarão de Mesquita</h3>
+            <p>Rua Prefeito José Montes Paixão, 1265 - Centro, Mesquita - RJ, 26553-160</p>
+            <div className="email"></div>
+            <h3><img src={mailSvg} alt="icone de email" />Entre em contato conosco</h3>
+            <form className="form-contato" onSubmit={handleEnviar}>
+              <input
+                type="text"
+                placeholder="Seu nome"
+                value={nome}
+                onChange={e => setNome(e.target.value)}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Seu email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                required
+              />
+              <textarea
+                placeholder="Sua mensagem"
+                value={mensagem}
+                onChange={e => setMensagem(e.target.value)}
+                rows={4}
+                required
+              />
+              <Button1 type="submit">Enviar email</Button1>
+            </form>
+          </div>
         </div>
       </div>
       <iframe
