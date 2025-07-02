@@ -140,14 +140,6 @@ function Navbar() {
           white-space: nowrap;
         }
 
-        @media (min-width: 769px) {
-          .nav-links li.has-submenu:hover .submenu {
-            opacity: 1;
-            max-height: 500px;
-            pointer-events: auto;
-          }
-        }
-
         @media (max-width: 768px) {
           .hamburger {
             display: flex;
@@ -210,7 +202,26 @@ function Navbar() {
           }
         }
 
-        @media (min-width: 1024px) {
+         @media (min-width: 769px) and (max-width: 1023px) {
+          .navbar {
+            padding: 1.5rem 2rem;
+          }
+
+          .nav-links {
+            align-items: center;
+          }
+
+          .nav-links li a {
+            font-size: 1rem;
+            padding: 0rem 0rem;
+          }
+
+          .logo-tubarao img {
+            height: 80px;
+          }
+        }
+
+        @media (min-width: 1024px){
           .navbar {
             padding: 1.8rem 3rem 2rem 0;
           }
