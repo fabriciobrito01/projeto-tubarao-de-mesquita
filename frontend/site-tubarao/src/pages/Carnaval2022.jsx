@@ -79,8 +79,7 @@ function Carnaval2022() {
                 transition: background 0.2s, color 0.2s;
             }
 
-            .submenu-list button.active,
-            .submenu-list button:hover {
+            .submenu-list button.active {
                 background: #C8910F;
                 color: #fff;
                 max-width: 90%;

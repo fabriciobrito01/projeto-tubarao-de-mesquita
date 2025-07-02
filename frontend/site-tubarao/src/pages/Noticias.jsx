@@ -65,6 +65,15 @@ function Noticias() {
     }
 
     @media (min-width: 1024px) {
+    
+      h2 {
+        margin-left: 2rem;
+        }
+
+      p {
+        text-indent: 0;
+        }
+
       .noticias-list {
         display: flex;
         flex-direction: column;

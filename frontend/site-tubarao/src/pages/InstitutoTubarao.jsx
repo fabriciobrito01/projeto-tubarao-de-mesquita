@@ -11,96 +11,119 @@ function InstitutoTubarao() {
         <>
             <style>
                 {`
+                h2 {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+                .container {
+                    box-shadow: none;
+                }
+
+                .oinstituto {
+                    margin-bottom: 2.5rem;
+                }
+
                 .atividadesRealizadas {
                     background: #222;
                     border-radius: 0.5rem;
-                    margin: 2rem auto;
+                    width: 100vw;
+                    max-width: 100vw;
+                    margin-left: calc(-50vw + 50%);
+                    margin-right: 0;
+                    margin-bottom: 2.5rem;
                     }
+
+                .ajude {
+                    margin-bottom: 2.5rem;
+                }
 
                 .atividadesRealizadas p {
                     color: #fff;
+                }
+
+                @media (min-width: 1024px) {
+                    .atividadesRealizadas-content {
+                        max-width: 1000px;
+                        margin: 0 auto;
+                    }
                 }
                 `}
             </style>
 
             <div className="container">
-                <h1>O INSTITUTO</h1>
+                <div className="oinstituto">
+                    <h1>O INSTITUTO</h1>
 
-                <p>
-                    O Instituto Tubarão de Mesquita chega com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos. Nosso objetivo é proporcionar apoio integral às famílias, promovendo a inclusão social e o desenvolvimento da cidade de Mesquita.
-                </p>    
-                <p>
-                    O Instituto oferecerá cursos profissionalizantes, atividades culturais, esportivas e de lazer, além de suporte psicológico e assistencial.
-                </p>
-                <p>
-                    Estamos comprometidos em construir uma sociedade mais justa e igualitária, onde todos tenham acesso a oportunidades. Juntos faremos do instituto Tubarão de Mesquita um ponto de referência e transformação em nossa comunidade!    
-                </p>
-
-                
-                <br /><br />
-
-
+                    <p>
+                        O Instituto Tubarão de Mesquita chega com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos. Nosso objetivo é proporcionar apoio integral às famílias, promovendo a inclusão social e o desenvolvimento da cidade de Mesquita.
+                    </p>    
+                    <p>
+                        O Instituto oferecerá cursos profissionalizantes, atividades culturais, esportivas e de lazer, além de suporte psicológico e assistencial.
+                    </p>
+                    <p>
+                        Estamos comprometidos em construir uma sociedade mais justa e igualitária, onde todos tenham acesso a oportunidades. Juntos faremos do instituto Tubarão de Mesquita um ponto de referência e transformação em nossa comunidade!    
+                    </p>
+                </div>
                 <div className="atividadesRealizadas">
-                    <h2>ATIVIDADES QUE JÁ REALIZAMOS</h2>
+                    <div className="atividadesRealizadas-content">
+                        <h2>ATIVIDADES QUE JÁ REALIZAMOS</h2>
 
-                    <p>
-                        Desde a sua fundação, a G.R.E.S. Tubarão de Mesquita já promoveu diversas oficinas, eventos e ações voltadas para a inclusão social, como oficina de percussão, oficina de passista, aulão social de Muay Thai e aulão social de Jiu-Jitsu, impactando positivamente a vida de muitas pessoas da nossa comunidade. Apesar de pouco tempo de Escola, já são alguns anos de dedicação à cultura, à educação e ao fortalecimento dos laços sociais.
-                    </p>
-                    <p>
-                        Mas essa história não para por aqui. Com a criação do Instituto Tubarão de Mesquita, estamos ampliando ainda mais nossas ações! Agora, teremos uma área exclusivamente dedicada ao desenvolvimento dessas atividades, com estrutura e planejamento pensados para atender melhor a todos.
-                    </p>
-                    
-                    <p>                       
-                        Prepare-se para um novo ciclo de oficinas, cursos, encontros culturais e muito mais. O nosso compromisso com a transformação social só está começando!
-                    </p>
+                        <p>
+                            Desde a sua fundação, a G.R.E.S. Tubarão de Mesquita já promoveu diversas oficinas, eventos e ações voltadas para a inclusão social, como oficina de percussão, oficina de passista, aulão social de Muay Thai e aulão social de Jiu-Jitsu, impactando positivamente a vida de muitas pessoas da nossa comunidade. Apesar de pouco tempo de Escola, já são alguns anos de dedicação à cultura, à educação e ao fortalecimento dos laços sociais.
+                        </p>
+                        <p>
+                            Mas essa história não para por aqui. Com a criação do Instituto Tubarão de Mesquita, estamos ampliando ainda mais nossas ações! Agora, teremos uma área exclusivamente dedicada ao desenvolvimento dessas atividades, com estrutura e planejamento pensados para atender melhor a todos.
+                        </p>
+                        
+                        <p>                       
+                            Prepare-se para um novo ciclo de oficinas, cursos, encontros culturais e muito mais. O nosso compromisso com a transformação social só está começando!
+                        </p>
 
-                    <p>                        
-                        A seguir, você confere algumas imagens de como será o espaço do Instituto — o Galpão Tubarões — um ambiente pensado para promover inclusão, aprendizado, convivência e oportunidades para todos.
-                    </p>
-                    
-                    <br />
+                        <p>                        
+                            A seguir, você confere algumas imagens de como será o espaço do Instituto — o Galpão Tubarões — um ambiente pensado para promover inclusão, aprendizado, convivência e oportunidades para todos.
+                        </p>
 
-                    <div className="carousel-container">
-                        <Carousel
-                            showThumbs={false}
-                            showStatus={false}
-                            infiniteLoop
-                            autoPlay
-                            interval={4000}
-                            stopOnHover
-                            swipeable
-                            dynamicHeight={false}
-                        >
-                            <div>
-                                <img src={aulaoSocialMuayThai} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
-                            </div>
-                            <div>
-                                <img src={aulaoSocialJiuJitsu} alt="Aulão social de Jiu-Jitsu no Instituto Tubarão de Mesquita" />
-                            </div>
-                            <div>
-                                <img src={oficinaPercussao} alt="Oficina de percussão realizada pelo Instituto Tubarão de Mesquita" />
-                            </div>
-                            <div>
-                                <img src={oficinaPercussao2} alt="Participantes na oficina de percussão do Instituto Tubarão de Mesquita" />
-                            </div>
-                        </Carousel>
+                        <div className="carousel-container">
+                            <Carousel
+                                showThumbs={false}
+                                showStatus={false}
+                                infiniteLoop
+                                autoPlay
+                                interval={4000}
+                                stopOnHover
+                                swipeable
+                                dynamicHeight={false}
+                                >
+                                <div>
+                                    <img src={aulaoSocialMuayThai} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
+                                </div>
+                                <div>
+                                    <img src={aulaoSocialJiuJitsu} alt="Aulão social de Jiu-Jitsu no Instituto Tubarão de Mesquita" />
+                                </div>
+                                <div>
+                                    <img src={oficinaPercussao} alt="Oficina de percussão realizada pelo Instituto Tubarão de Mesquita" />
+                                </div>
+                                <div>
+                                    <img src={oficinaPercussao2} alt="Participantes na oficina de percussão do Instituto Tubarão de Mesquita" />
+                                </div>
+                            </Carousel>
+                        </div>
                     </div>
                 </div>
-                <br /><br />
-
-                <h2>AJUDE A TUBARÃO E FAÇA PARTE DA TRANSFORMAÇÃO!</h2>
-
-                <p>
-                    Acreditamos que a mudança começa com pequenos gestos. Se você compartilha dos nossos valores e deseja contribuir com ações concretas de responsabilidade social, saiba que pode ajudar o Instituto Tubarão de Mesquita a continuar impactando vidas.
-                </p>
-                <p>
-                    Sua doação é fundamental para que possamos manter e ampliar nossas atividades, oferecendo cada vez mais oficinas, cursos, eventos e apoio à comunidade.
-                </p>
-                <p>
-                    Ao lado, disponibilizamos um QR Code para doações via Pix, facilitando sua contribuição de forma rápida, prática e segura. Juntos, podemos transformar ainda mais realidades!
-                </p>
                 
-                <br /><br /><br />
+                <div className="ajude">
+                    <h2>AJUDE A TUBARÃO E FAÇA PARTE DA TRANSFORMAÇÃO!</h2>
+
+                    <p>
+                        Acreditamos que a mudança começa com pequenos gestos. Se você compartilha dos nossos valores e deseja contribuir com ações concretas de responsabilidade social, saiba que pode ajudar o Instituto Tubarão de Mesquita a continuar impactando vidas.
+                    </p>
+                    <p>
+                        Sua doação é fundamental para que possamos manter e ampliar nossas atividades, oferecendo cada vez mais oficinas, cursos, eventos e apoio à comunidade.
+                    </p>
+                    <p>
+                        Ao lado, disponibilizamos um QR Code para doações via Pix, facilitando sua contribuição de forma rápida, prática e segura. Juntos, podemos transformar ainda mais realidades!
+                    </p>
+                </div>
             </div>
         </>
     );

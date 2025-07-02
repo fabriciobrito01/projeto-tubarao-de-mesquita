@@ -25,93 +25,93 @@ function Carnaval2025() {
   return (
     <>
       <style>{`
-            .negrito {
-                font-size: 0.8rem;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                font-weight: bold;
-                white-space: pre-wrap;
-                }
+        .negrito {
+            font-size: 0.8rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            white-space: pre-wrap;
+            }
+        
+        .submenu-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            }
+        
+        .submenu-toggle {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #222;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.2em 0.7em;
+            transition: color 0.2s;
+            border-radius: 8px;
+            }
             
-            .submenu-dropdown {
-                position: relative;
-                display: inline-block;
-                margin-bottom: 2rem;
-                }
-            
-            .submenu-toggle {
-                font-size: 2rem;
-                font-weight: bold;
-                color: #222;
-                background: none;
-                border: none;
-                cursor: pointer;
-                padding: 0.2em 0.7em;
-                transition: color 0.2s;
-                border-radius: 8px;
-                }
-                
-            .submenu-toggle.open,
-            .submenu-toggle:focus {
-                color: #CB910F;
-                outline: none;
-                }
-
-            .submenu-list {
-                display: ${open ? "block" : "none"};
-                position: absolute;
-                left: 0;
-                top: 110%;
-                background: #fff;
-                box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-                border-radius: 10px;
-                min-width: 220px;
-                z-index: 10;
-                padding: 0.5rem 0;
-                }
-
-            .submenu-list button {
-                width: 100%;
-                background: none;
-                border: none;
-                font-size: 1.3rem;
-                font-weight: bold;
-                color: #222;
-                text-align: left;
-                padding: 0.7em 1.2em;
-                cursor: pointer;
-                transition: background 0.2s, color 0.2s;
-                }
-
-            .submenu-list button.active,
-            .submenu-list button:hover {
-                background: #C8910F;
-                color: #fff;
-                }
-
-            .video-samba {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 3rem;
-                margin-bottom: 2rem;
-                border-radius: 10px;
-            }
-            .video-samba iframe {
-                border-radius: 5px;
-                box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+        .submenu-toggle.open,
+        .submenu-toggle:focus {
+            color: #CB910F;
+            outline: none;
             }
 
-            @media (max-width: 600px) {
-                .submenu-toggle { font-size: 1.2rem; }
-                .submenu-list button { font-size: 1rem; }
-                }
-
-            @media (min-width: 1024px) {
-                p {
-                    padding: 0.12rem;
-                }
+        .submenu-list {
+            display: ${open ? "block" : "none"};
+            position: absolute;
+            left: 0;
+            top: 110%;
+            background: #fff;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+            border-radius: 10px;
+            min-width: 220px;
+            z-index: 10;
+            padding: 0.5rem 0;
             }
+
+        .submenu-list button {
+            width: 100%;
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #222;
+            text-align: left;
+            padding: 0.7em 1.2em;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            }
+
+        .submenu-list button.active,
+        .submenu-list button:hover {
+            background: #C8910F;
+            color: #fff;
+            }
+
+        .video-samba {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+        .video-samba iframe {
+            border-radius: 5px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+        }
+
+        @media (max-width: 600px) {
+            .submenu-toggle { font-size: 1.2rem; }
+            .submenu-list button { font-size: 1rem; }
+            }
+
+        @media (min-width: 1024px) {
+            p {
+                padding: 0.12rem;
+            }
+        }
         `}
       </style>
       <div className="container">

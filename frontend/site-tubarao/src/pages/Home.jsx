@@ -29,17 +29,17 @@ function Home() {
   return (
     <>
       <style>
-        {`            
+        {`    
+          .container {
+            box-shadow: none;
+          }
+        
           .historia-tubarao {
             margin-bottom: 2.5rem;
           }
 
           .carousel-container {
             margin-bottom: 2.5rem;
-          }
-
-          .sobre-nós {
-            margin-top: 2.5rem;
           }
 
           .historia-tubarao img {
@@ -72,11 +72,13 @@ function Home() {
             background-position: center;
             width: 100%;
             height: 630px;
+            margin-bottom: 2.5rem;
           }
 
           .sobre-nós h2 {
             text-align: left;
             margin: 1rem 0 1rem 0;
+            margin-left: 2rem;
             }
 
           .sobre-nós h3 {
@@ -152,14 +154,14 @@ function Home() {
             width: 90%;
             height: 260px;
             max-width: 700px;
-            margin: 0 auto 2rem auto;
+            margin: 0 auto;
+            margin-bottom: 2.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: visible;
             border-radius: 1.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-top: 2rem;
           }
           .carousel-container {
             position: relative;
@@ -167,9 +169,12 @@ function Home() {
             flex-direction: column;
             align-items: center;
             background: #222;
-            margin: 25px;
-            border-radius: 12px;
-            
+            width: 100vw;
+            max-width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            margin-right: 0;
+            border-radius: 0;
+            margin-bottom: 2.5rem;
           }
           .carousel-container h3 {
             font-size: 1.2rem;
@@ -181,14 +186,13 @@ function Home() {
           }
           .carousel-container p {
             color: #fff;
-            font-size: 0.65rem;
+            font-size: 0.8rem;
             text-align: left;
             padding-bottom: 3rem;
             }
 
           .carousel-container img {
-            border-radius: 10px;
-            padding: 2.2rem;
+            padding: 2rem;
           }
 
           @media (min-width: 1024px) {
@@ -196,8 +200,6 @@ function Home() {
               display: flex;
               flex-direction: row-reverse;
             }
-
-            .historia-tubarao 
 
             .historia-tubarao p {
               display: flex;
@@ -247,19 +249,30 @@ function Home() {
 
             iframe{
               width: 100vw;
-              max-width: 97%;
+              max-width: 100%;
               height: 450px;
-              border-radius: 1rem;
+              border-radius: 0;
               padding: 0;
               box-shadow: 0 4px 18px #0009;
               // margin: 0;
               }
 
             .carousel-container {
+              width: 100vw;
+              max-width: 100vw;
+              margin-left: calc(-50vw + 50%);
+              margin-right: 0;
+              border-radius: 0;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);    
+            }
+
+            .noticias-content {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 2rem 1.5rem;
               display: flex;
-              width: 100%;
-              max-width: 900px;
-              margin: 1.8rem auto;
+              flex-direction: column;
+              align-items: center;          
             }
 
             .carousel-container button {
@@ -268,7 +281,6 @@ function Home() {
             }
 
             .carousel-container .carousel .slide img {
-              border-radius: 10px;
               width: 80%;
               height: 300px;
             }
@@ -300,9 +312,7 @@ function Home() {
           </Link>
         </div>
 
-        <hr />
 
-        <h2>ÚLTIMAS NOTÍCIAS</h2>
         <div className="carousel-container">
           <Carousel
             showThumbs={false}

@@ -38,8 +38,7 @@ h2 {
     color: #CB910F;
     margin: 2rem 0 2.5rem 0;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;   
+
 }
 
 h3 {
@@ -64,6 +63,11 @@ p {
     text-align: left;
     padding-left: 2rem;
     padding-right: 2rem;   
+}
+
+button {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 hr {
@@ -109,14 +113,19 @@ button {
 }
 
 .control-arrow{
-    margin-top: 1rem;
+    height: 40%;
     width: 15%;
+    align-self: center;
+    border-radius: 10px;
 }
+
+
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 50%;
+        max-width: 1000px;
         margin: 0 auto;
+        box-shadow: 0 4px 18px #0002;
     }
 
     h1 {
