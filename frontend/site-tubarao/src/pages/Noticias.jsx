@@ -1,4 +1,4 @@
-import institutoFrente from "../assets/instituto-frente.jpg";
+import institutoFachada from "../assets/instituto/instituto-fachadagalpao.jpg";
 import Button1 from "../components/Button1.jsx";
 
 function Noticias() {
@@ -92,7 +92,7 @@ function Noticias() {
         <h1>NOTÍCIAS</h1>
           <div className="noticia-card">
             <div className="noticia-content">
-              <img src={institutoFrente} alt="Instituto Tubarão de Mesquita" />
+              <img src={institutoFachada} alt="Instituto Tubarão de Mesquita" />
               <div className="noticia-text">
                 <h2>Instituto Tubarão de Mesquita perto de ser inaugurado!</h2>
                 <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...<a href="">Leia mais →</a></p>
@@ -101,7 +101,7 @@ function Noticias() {
           </div>
           <div className="noticia-card">
             <div className="noticia-content">
-              <img src={institutoFrente} alt="Instituto Tubarão de Mesquita" />
+              <img src={institutoFachada} alt="Instituto Tubarão de Mesquita" />
               <div className="noticia-text">
                 <h2>Enredo escolhido para o Carnaval 2026!</h2>
                 <p>Resumo ou descrição da notícia 2. Edite ou substitua este texto conforme desejar... <a href="">Leia mais →</a></p>

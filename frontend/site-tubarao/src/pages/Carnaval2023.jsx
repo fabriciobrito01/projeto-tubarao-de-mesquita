@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import rainha from "../assets/desfile23/desfile23-rainha.jpg";
 
 function Carnaval2023() {
     const [aba, setAba] = useState("enredo");
@@ -259,7 +260,7 @@ function Carnaval2023() {
 
         {aba === "desfile" && (
           <>
-
+            <img src={rainha} alt="" />
           </>
         )}
 

@@ -3,14 +3,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 
-import backgroudImage from "../assets/batismo-casaisebandeiras.jpg";
+
 import locationSvg from "../assets/location-svgrepo-com.svg";
-import logoTubarao from "../assets/logo-tubarao.svg";
-import msPb2023 from "../assets/desfile23-mspb.jpg";
 import mailSvg from "../assets/mail-svgrepo-com.svg";
 import Button1 from "../components/Button1";
-import institutoFrente from "../assets/instituto-frente.jpg";
-import institutoDentro from "../assets/instituto-dentro.jpg";
+import institutoFachada from "../assets/instituto/instituto-fachadagalpao.jpg";
+import primeiroCasal24 from "../assets/desfile24/desfile24-primeirocasal.jpg";
+import backgroudPicture from "../assets/desfile24/desfile24-comissaodefrentedancando.jpg";
 
 function Home() {
   const [nome, setNome] = useState("");
@@ -67,7 +66,7 @@ function Home() {
           }
 
           .sobre-nós {
-            background-image: url(${backgroudImage});
+            background-image: url(${backgroudPicture});
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -116,7 +115,7 @@ function Home() {
             position: relative;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.85);
+            background-color: rgba(0, 0, 0, 0.80);
             padding-top: 0.4rem;
             }
 
@@ -208,8 +207,8 @@ function Home() {
 
             .historia-tubarao img {
               border-radius: 15%;
-              width: 350px;
-              height: 270px;
+              width: 900px;
+              height: 350px;
               padding: 2rem;
               object-fit: cover;
               margin: 0rem 0;
@@ -223,7 +222,7 @@ function Home() {
                 justify-content: center;
                 align-items: center;
                 min-height: 670px;
-                background-image: url(${backgroudImage});
+                background-image: url(${backgroudPicture});
                 background-size: cover;
                 background-position: center;
                 width: 100%;
@@ -317,7 +316,7 @@ function Home() {
               Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
             </p>
             </div>
-            <img src={msPb2023} alt="" height={300} width={300} />
+              <img src={primeiroCasal24} alt="" />
           </div>
           <Link to="/tubarao/historia">
             <Button1 >Saiba mais</Button1>
@@ -339,7 +338,7 @@ function Home() {
             <div>
               <div className="noticias-content">
                 <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
-                <img src={institutoFrente} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
+                <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
                 <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
               </div>
             </div>

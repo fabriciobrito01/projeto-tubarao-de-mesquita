@@ -2,13 +2,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 
-import casaisTubaraoBeijaFlor from "../assets/batismo-casaisebandeiras.jpg"
-import bandeirasCruzadas from "../assets/batismo-bandeirascruzadas.jpg"
-import passistasBeijaFlor from "../assets/batismo-passistasbeijaflor.jpg"
-import bateriaBeijaFlor from "../assets/batismo-bateriabeijaflor.jpg"
-import presidentesComMestres from "../assets/batismo-presidentesemestres.jpg"
-import casalBeijaFlor from "../assets/batismo-casalbeijaflor.jpg"
-import presidenteTubaraoComCasalBeijaFlor from "../assets/batismo-presidenteecasal.jpg"
+import bandeirasCruzadas from "../assets/batismo/batismo-bandeirascruzadas.jpg";
+import casaisTubaraoEBeijaFlor from "../assets/batismo/batismo-casaistubaraoebeijaflor.jpg";
+import passistasBeijaFlor from "../assets/batismo/batismo-passistasbeijaflor.jpg";
+import bateriaBeijaFlor from "../assets/batismo/batismo-bateriabeijaflor.jpg";
+import presidentesComMestres from "../assets/batismo/batismo-presidentestubaraoemestresbeijaflor.jpg";
+import presidenteTubaraoComCasalBeijaFlor from "../assets/batismo/batismo-presidentetubaraoecasalbeijaflor.jpg";
+import casalBeijaFlor from "../assets/batismo/batismo-casalbeijaflor.jpg";
+
 import Button1 from "../components/Button1";
 
 function HistoriaTubarao() {
@@ -77,7 +78,7 @@ function HistoriaTubarao() {
                             dynamicHeight={false}
                         >
                             <div>
-                                <img src={casaisTubaraoBeijaFlor} alt="Casal de mestre-sala e porta-bandeira da Tubarão de Mesquita e da Beija-Flor de Nilópolis se apresentando." />
+                                <img src={casaisTubaraoEBeijaFlor} alt="Casal de mestre-sala e porta-bandeira da Tubarão de Mesquita e da Beija-Flor de Nilópolis se apresentando." />
                             </div>
                             <div>
                                 <img src={bandeirasCruzadas} alt="Portas-bandeiras da Tubarão de Mesquita e da Beija-Flor de Nilópolis cruzadando suas respectivas bandeiras." />

@@ -2,11 +2,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import {useRef} from "react";
 
-import aulaoSocialMuayThai from "../assets/instituto-aulaomuaythai.jpg";
-import aulaoSocialJiuJitsu from "../assets/instituto-aulaojiujitsu.jpg";
-import oficinaPercussao from "../assets/instituto-oficinadepercussao.jpg";
-import oficinaPercussao2 from "../assets/instituto-oficinaperscussao2.jpg";
-import chocalho23 from "../assets/desfile23-chocalho.jpg";
+import aulaMuayThai from "../assets/instituto/instituto-aulaomuaythai.jpg";
+import aulaJiuJitsu from "../assets/instituto/instituto-aulaojiujitsu.jpg";
+import oficinaDePercussao from "../assets/instituto/instituto-oficinadepercussao.jpg";
+import oficinaDePercussao2 from "../assets/instituto/instituto-oficinaperscussao2.jpg";
 import Button1 from "../components/Button1";
 
 function InstitutoTubarao() {
@@ -132,16 +131,16 @@ function InstitutoTubarao() {
                                 dynamicHeight={false}
                                 >
                                 <div>
-                                    <img src={aulaoSocialMuayThai} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
+                                    <img src={aulaMuayThai} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
                                 </div>
                                 <div>
-                                    <img src={aulaoSocialJiuJitsu} alt="Aulão social de Jiu-Jitsu no Instituto Tubarão de Mesquita" />
+                                    <img src={aulaJiuJitsu} alt="Aulão social de Jiu-Jitsu no Instituto Tubarão de Mesquita" />
                                 </div>
                                 <div>
-                                    <img src={oficinaPercussao} alt="Oficina de percussão realizada pelo Instituto Tubarão de Mesquita" />
+                                    <img src={oficinaDePercussao} alt="Oficina de percussão realizada pelo Instituto Tubarão de Mesquita" />
                                 </div>
                                 <div>
-                                    <img src={oficinaPercussao2} alt="Participantes na oficina de percussão do Instituto Tubarão de Mesquita" />
+                                    <img src={oficinaDePercussao2} alt="Participantes na oficina de percussão do Instituto Tubarão de Mesquita" />
                                 </div>
                             </Carousel>
                         </div>
