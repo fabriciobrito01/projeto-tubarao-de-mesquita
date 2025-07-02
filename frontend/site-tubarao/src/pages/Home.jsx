@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import backgroudImage from "../assets/batismo-casaisebandeiras.jpg";
 import locationSvg from "../assets/location-svgrepo-com.svg";
 import logoTubarao from "../assets/logo-tubarao.svg";
+import msPb2023 from "../assets/desfile23-mspb.jpg";
 import mailSvg from "../assets/mail-svgrepo-com.svg";
 import Button1 from "../components/Button1";
 import institutoFrente from "../assets/instituto-frente.jpg";
@@ -43,12 +44,11 @@ function Home() {
           }
 
           .historia-tubarao img {
-            width: 270px;
+            width: 350px;
             height: 270px;
+            padding: 2rem;
             object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 4px 18px #0002;
-            margin: 1.5rem 0;
+            margin: 0rem 0;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -206,6 +206,18 @@ function Home() {
               text-align: left;
             }
 
+            .historia-tubarao img {
+              border-radius: 15%;
+              width: 350px;
+              height: 270px;
+              padding: 2rem;
+              object-fit: cover;
+              margin: 0rem 0;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
             .sobre-nós {
                 display: flex;
                 justify-content: center;
@@ -305,7 +317,7 @@ function Home() {
               Com raízes fincadas na tradição local e os olhos voltados para o futuro, a Tubarão de Mesquita já conquistou seu espaço na avenida e no coração do povo. Mais do que desfilar, a escola pulsa com projetos sociais que impactam de verdade a comunidade. É oficina, é dança, é educação, é arte, é luta, com responsabilidade social.
             </p>
             </div>
-            <img src={logoTubarao} alt="" height={300} width={300} />
+            <img src={msPb2023} alt="" height={300} width={300} />
           </div>
           <Link to="/tubarao/historia">
             <Button1 >Saiba mais</Button1>

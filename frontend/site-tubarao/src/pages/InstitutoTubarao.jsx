@@ -1,12 +1,23 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import {useRef} from "react";
 
 import aulaoSocialMuayThai from "../assets/instituto-aulaomuaythai.jpg";
 import aulaoSocialJiuJitsu from "../assets/instituto-aulaojiujitsu.jpg";
 import oficinaPercussao from "../assets/instituto-oficinadepercussao.jpg";
 import oficinaPercussao2 from "../assets/instituto-oficinaperscussao2.jpg";
+import chocalho23 from "../assets/desfile23-chocalho.jpg";
+import Button1 from "../components/Button1";
 
 function InstitutoTubarao() {
+    const ajudeRef = useRef(null);
+
+    const scrollToAjude = () => {
+        if (ajudeRef.current) {
+            ajudeRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
+
     return (
         <>
             <style>
@@ -35,10 +46,16 @@ function InstitutoTubarao() {
 
                 .ajude {
                     margin-bottom: 2.5rem;
+                    scroll-margin-top: 6rem;
                 }
 
                 .atividadesRealizadas p {
                     color: #fff;
+                }
+
+                .doacao-button {
+                    display: flex;
+                    justify-content: center;
                 }
 
                 @media (min-width: 1024px) {
@@ -46,12 +63,25 @@ function InstitutoTubarao() {
                         max-width: 1000px;
                         margin: 0 auto;
                     }
+
+                    .header-img img {
+                        margin-top: 2rem;
+                        height: 200px;
+                        width: 100vw;
+                        max-width: 100vw;
+                        margin-left: calc(-50vw + 50%);
+                        margin-right: 0;
+                        display: flex;
+                    }
                 }
                 `}
             </style>
 
             <div className="container">
                 <div className="oinstituto">
+                    {/* <div className="header-img">
+                        <img src={chocalho23} alt="" />
+                    </div> */}
                     <h1>O INSTITUTO</h1>
 
                     <p>
@@ -63,7 +93,14 @@ function InstitutoTubarao() {
                     <p>
                         Estamos comprometidos em construir uma sociedade mais justa e igualitária, onde todos tenham acesso a oportunidades. Juntos faremos do instituto Tubarão de Mesquita um ponto de referência e transformação em nossa comunidade!    
                     </p>
+                    <p>
+                        E você pode fazer parte dessa transformação! Ajude a Tubarão apertando o botão abaixo e contribuindo com uma doação.
+                    </p>
+                    <div className="doacao-button">
+                        <Button1 onClick={scrollToAjude}>Faça parte</Button1>
+                    </div>
                 </div>
+
                 <div className="atividadesRealizadas">
                     <div className="atividadesRealizadas-content">
                         <h2>ATIVIDADES QUE JÁ REALIZAMOS</h2>
@@ -111,7 +148,7 @@ function InstitutoTubarao() {
                     </div>
                 </div>
                 
-                <div className="ajude">
+                <div className="ajude" ref={ajudeRef}>
                     <h2>AJUDE A TUBARÃO E FAÇA PARTE DA TRANSFORMAÇÃO!</h2>
 
                     <p>
