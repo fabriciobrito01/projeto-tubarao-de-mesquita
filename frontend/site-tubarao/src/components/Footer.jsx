@@ -15,16 +15,14 @@ function Footer() {
             padding: 2rem 0 1.2rem 0;
             overflow: hidden;
           }
-          .footer .logo-tubarao {
+          .logo-tubarao-footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 1rem;
-            margin-bottom: 2.5rem;
             width: 100%;
           }
-          .footer .logo-tubarao img {
-            height: 115px;
+          .logo-tubarao-footer img {
+            height: 195px;
             max-width: 90vw;
             margin: 0 auto;
             display: block;
@@ -70,8 +68,8 @@ function Footer() {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.3rem;
             margin-top: 1rem;
+            padding: 0rem;
           }
           .footer .Whatsapp {
             margin-top: 0.2rem;
@@ -93,6 +91,7 @@ function Footer() {
             color: #fff;
             font-family: 'Lexend', sans-serif;
             font-weight: 500;
+            padding: 0rem;
           }
           .footer .footer-text {
             margin-top: 1.5rem;
@@ -110,11 +109,47 @@ function Footer() {
               padding: 0.3rem 0.3rem;
             }
           }
+
+          @media (min-width: 1024px) {
+            .logo-tubarao-footer img {
+              height: 250px;
+              max-width: 100%;
+            }
+
+            .footer .footer-links-rows {
+              margin-bottom: 2.5rem;
+            }
+
+            .footer .footer-links-row a {
+              font-size: 1.4rem;
+            }
+
+            .footer .Telefone,
+            .footer .Whatsapp {
+              gap: 0rem;
+            }
+
+            .footer .Telefone p,
+            .footer .Whatsapp p {
+              font-size: 1.5rem;
+              padding: 0rem;
+            }
+
+            .footer .Telefone img {
+              width: 35px;
+              height: 35px;
+            }
+
+            .footer .Whatsapp img {
+              width: 29px;
+              height: 29px;
+            }
+          }
         `}
             </style>
             <footer className="footer">
                 <div>
-                    <div className="logo-tubarao">
+                    <div className="logo-tubarao-footer">
                         <Link to="/">
                             <img src={logoTubarao} alt="Logo" />
                         </Link>

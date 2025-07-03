@@ -1,8 +1,5 @@
 import { useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
-
 
 import locationSvg from "../assets/location-svgrepo-com.svg";
 import mailSvg from "../assets/mail-svgrepo-com.svg";
@@ -38,10 +35,6 @@ function Home() {
             margin-bottom: 2.5rem;
           }
 
-          .carousel-container {
-            margin-bottom: 2.5rem;
-          }
-
           .historia-tubarao img {
             width: 350px;
             height: 270px;
@@ -63,6 +56,39 @@ function Home() {
             display: block;
             margin: 1.5rem 0 1rem 0;
             width: 200px;
+          }
+
+          .noticias-content {
+            max-width: 800px;
+            margin: 2.5rem auto;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            background: #222;
+            border-radius: 0.5rem;
+          }
+
+          .noticias-content h3 {
+            font-size: 1.2rem;
+            font-family: "Lexend", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: center;
+            color: #fff;
+            width: 100%;
+          }
+          .noticias-content p {
+            color: #fff;
+            font-size: 0.9rem;
+            text-align: left;
+          }
+          .noticias-content img {
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 1rem;
+            object-fit: cover;
           }
 
           .sobre-nós {
@@ -162,37 +188,6 @@ function Home() {
             border-radius: 1.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
           }
-          .carousel-container {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #222;
-            width: 100vw;
-            max-width: 100vw;
-            margin-left: calc(-50vw + 50%);
-            margin-right: 0;
-            border-radius: 0;
-            margin-bottom: 2.5rem;
-          }
-          .carousel-container h3 {
-            font-size: 1.2rem;
-            font-family: "Lexend", sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            text-align: left;
-            color: #fff;
-          }
-          .carousel-container p {
-            color: #fff;
-            font-size: 0.8rem;
-            text-align: left;
-            padding-bottom: 3rem;
-            }
-
-          .carousel-container img {
-            padding: 2rem;
-          }
 
           @media (min-width: 1024px) {
             .tubarao-p-img{
@@ -217,11 +212,43 @@ function Home() {
               margin-right: auto;
             }
 
+            .historia-tubarao button {
+              width: 25%;
+              height: 50px;
+              font-size: 1.3rem;
+            }
+
+            .noticias-content {
+              max-width: 1400px;
+              margin: 2.5rem auto;
+              padding: 2rem 1.5rem;
+              display: flex;
+              flex-direction: row;
+              gap: 2rem;
+              align-items: center;
+              justify-content: center;    
+            }
+
+            .noticias-content h3 {
+              font-size: 1.4rem;
+            }
+
+            .noticias-content p {
+              font-size: 1.4rem;
+              padding-top: 1.8rem;  
+              padding-bottom: 2rem;
+            }
+
+            .noticias-content img {
+              width: 80%;
+              height: 300px;
+            }
+
             .sobre-nós {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 670px;
+                min-height: 700px;
                 background-image: url(${backgroudPicture});
                 background-size: cover;
                 background-position: center;
@@ -248,6 +275,17 @@ function Home() {
 
             .sobre-nós button {
               width: 30%;
+              font-size: 1.3rem;
+              height: 50px;
+            }
+            .sobre-nós p {
+              font-size: 1.1rem;
+            }
+            .sobre-nós h3 {
+              font-size: 1.2rem;
+            }
+            .sobre-nós input, textarea {
+              font-size: 1.1rem;
             }
 
             .form-contato {
@@ -267,40 +305,6 @@ function Home() {
               box-shadow: 0 4px 18px #0009;
               // margin: 0;
               }
-
-            .carousel-container {
-              width: 100vw;
-              max-width: 100vw;
-              margin-left: calc(-50vw + 50%);
-              margin-right: 0;
-              border-radius: 0;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);    
-            }
-
-            .noticias-content {
-              max-width: 800px;
-              margin: 0 auto;
-              padding: 2rem 1.5rem;
-              display: flex;
-              flex-direction: column;
-              align-items: center;          
-            }
-
-            .carousel-container button {
-              margin-top: 1.5rem;
-              width: 25%;
-            }
-
-            .carousel-container .carousel .slide img {
-              width: 80%;
-              height: 300px;
-            }
-
-            .carousel-container p {
-              font-size: 0.9rem;
-              padding-top: 1.8rem;  
-              padding-bottom: 2rem;
-            }
           }
         `}
       </style>
@@ -323,30 +327,26 @@ function Home() {
           </Link>
         </div>
 
-
-        <div className="carousel-container">
-          <Carousel
-            showThumbs={false}
-            showStatus={false}
-            infiniteLoop
-            autoPlay
-            interval={10000}
-            stopOnHover
-            swipeable
-            dynamicHeight={false}
-          >
-            <div>
-              <div className="noticias-content">
-                <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
-                <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
-                <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
-              </div>
-            </div>
-            {/* <div>
-              <img src={institutoDentro} alt="Aulão social de Jiu-Jitsu no Instituto Tubarão de Mesquita" />
-            </div> */}
-          </Carousel>
-          <Button1>Leia Mais</Button1>
+        <div className="noticias-content">
+          <h2>ÚLTIMAS NOTÍCIAS</h2>
+          <hr></hr>
+          <div className="noticia-1">
+            <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
+            <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
+            <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
+          </div>
+          <hr></hr>
+          <div className="noticia-2">
+            <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
+            <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
+            <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
+          </div>
+          <hr></hr>
+          <div className="noticia-3">
+            <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
+            <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
+            <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
+          </div>
         </div>
 
       </div>
@@ -403,4 +403,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home
