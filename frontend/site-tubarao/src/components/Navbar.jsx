@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import logoTubarao from '../assets/logo-tubarao.svg';
 
@@ -6,11 +6,46 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const isMobile = window.innerWidth < 769;
+  const submenuRef = useRef(null);
+
+  const isTouchDevice = () => {
+    if (typeof window === "undefined") return false;
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  };
+
+  const [isTouch, setIsTouch] = useState(isTouchDevice());
+
+  useEffect(() => {
+    const handleResize = () => setIsTouch(isTouchDevice());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     if (!open) setSubmenuOpen(false);
   }, [open]);
+
+  useEffect(() => {
+    if (!isTouch || !submenuOpen) return;
+
+    function handleClickOutside(event) {
+      if (submenuRef.current && !submenuRef.current.contains(event.target)) {
+        setSubmenuOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [isTouch, submenuOpen]);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 0);
@@ -213,7 +248,23 @@ function Navbar() {
 
           .nav-links li a {
             font-size: 1rem;
-            padding: 0rem 0rem;
+            padding: 0.5rem 0rem;
+          }
+
+          .nav-links li.has-submenu .submenu {
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 0.25rem 1rem;
+            border-radius: 0 0 10px 10px;
+            min-width: 180px;
+            background: #222;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            pointer-events: none;
+            transition: opacity 0.3s ease, max-height 0.3s ease;
           }
 
           .logo-tubarao img {
@@ -247,6 +298,7 @@ function Navbar() {
             overflow: visible;
             justify-content: flex-end;
           }
+
           .nav-links li.has-submenu .submenu {
             list-style: none;
             position: absolute;
@@ -262,6 +314,7 @@ function Navbar() {
             pointer-events: none;
             transition: opacity 0.3s ease, max-height 0.3s ease;
           }
+
           .nav-links li.has-submenu:hover .submenu {
             opacity: 1;
             max-height: 500px;
@@ -289,8 +342,12 @@ function Navbar() {
           <li><Link to="/institutotubarao" onClick={handleCloseMenus}>INSTITUTO</Link></li>
           <li><Link to="/cadastro" onClick={handleCloseMenus}>CADASTRO</Link></li>
           <li
+            ref={submenuRef}
             className={`has-submenu${submenuOpen ? " active" : ""}`}
-            onClick={isMobile ? () => setSubmenuOpen((prev) => !prev) : undefined}
+            onClick={isTouch ? (e) => {
+              e.stopPropagation();
+              setSubmenuOpen((prev) => !prev);
+            } : undefined}
             style={{ cursor: "pointer", userSelect: "none" }}
           >
             <Link>TUBARÃO</Link>

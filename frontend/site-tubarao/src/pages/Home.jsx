@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import locationSvg from "../assets/location-svgrepo-com.svg";
@@ -8,10 +8,36 @@ import institutoFachada from "../assets/instituto/instituto-fachadagalpao.jpg";
 import primeiroCasal24 from "../assets/desfile24/desfile24-primeirocasal.jpg";
 import backgroudPicture from "../assets/desfile24/desfile24-comissaodefrentedancando.jpg";
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 769);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 769);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return isMobile; 
+}
+
 function Home() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [mensagem, setMensagem] = useState("");
+  const isMobile = useIsMobile();
+
+  const isTouchDevice = () => {
+    if (typeof window === "undefined") return false;
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  };
+  const [isTouch, setIsTouch] = useState(isTouchDevice());
+  useEffect(() => {
+    const handleResize = () => setIsTouch(isTouchDevice());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   function handleEnviar(e) {
     e.preventDefault();
@@ -22,6 +48,32 @@ function Home() {
     );
     window.location.href = `mailto:${destinatario}?subject=${assunto}&body=${corpo}`;
   }
+
+  const noticias = [
+    {
+      titulo: "Instituto Tubarão de Mesquita perto de ser inaugurado!",
+      imagem: institutoFachada,
+      texto: "No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos..."
+    },
+    {
+      titulo: "Aulão social de Muay Thai no Instituto Tubarão de Mesquita",
+      imagem: institutoFachada,
+      texto: "O Instituto Tubarão de Mesquita promoveu um aulão social de Muay Thai para crianças e jovens da comunidade, incentivando o esporte e a cidadania..."
+    },
+    {
+      titulo: "Projeto de reforço escolar começa em agosto",
+      imagem: institutoFachada,
+      texto: "A partir de agosto, o Instituto Tubarão de Mesquita oferecerá aulas de reforço escolar gratuitas para alunos do ensino fundamental da região..."
+    }
+  ];
+
+  // Estado do carrossel
+  const [noticiaIndex, setNoticiaIndex] = useState(0);
+
+  // Navegação do carrossel
+  const handlePrev = () => setNoticiaIndex((prev) => (prev === 0 ? noticias.length - 1 : prev - 1));
+  const handleNext = () => setNoticiaIndex((prev) => (prev === noticias.length - 1 ? 0 : prev + 1));
+
 
   return (
     <>
@@ -58,7 +110,8 @@ function Home() {
             width: 200px;
           }
 
-          .noticias-content {
+          .noticias-carousel {
+            height: 650px;
             max-width: 800px;
             margin: 2.5rem auto;
             padding: 2rem 1.5rem;
@@ -69,7 +122,52 @@ function Home() {
             border-radius: 0.5rem;
           }
 
-          .noticias-content h3 {
+          .carousel-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+          }
+
+          .carousel-image-wrapper img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            object-fit: cover;
+            display: block;
+          }
+
+          /* Botões laterais */
+          .carousel-btn-absolute {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #CB910F;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            z-index: 2;
+          }
+
+          .carousel-btn-absolute:hover {
+            background: #a97e0c;
+          }
+
+          .carousel-btn-left {
+            left: 10px; /* Ajuste conforme necessário */
+          }
+
+          .carousel-btn-right {
+            right: 10px; /* Ajuste conforme necessário */
+          }
+
+          .noticias-carousel h3 {
             font-size: 1.2rem;
             font-family: "Lexend", sans-serif;
             font-weight: 500;
@@ -78,17 +176,21 @@ function Home() {
             color: #fff;
             width: 100%;
           }
-          .noticias-content p {
+          .noticias-carousel p {
             color: #fff;
             font-size: 0.9rem;
             text-align: left;
           }
-          .noticias-content img {
+          .noticias-carousel img {
             padding: 0.5rem;
             width: 100%;
             max-width: 500px;
             border-radius: 1rem;
             object-fit: cover;
+            margin: 0rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
           }
 
           .sobre-nós {
@@ -218,7 +320,7 @@ function Home() {
               font-size: 1.3rem;
             }
 
-            .noticias-content {
+            .noticias-carousel {
               max-width: 1400px;
               margin: 2.5rem auto;
               padding: 2rem 1.5rem;
@@ -229,17 +331,17 @@ function Home() {
               justify-content: center;    
             }
 
-            .noticias-content h3 {
+            .noticias-carousel h3 {
               font-size: 1.4rem;
             }
 
-            .noticias-content p {
+            .noticias-carousel p {
               font-size: 1.4rem;
               padding-top: 1.8rem;  
               padding-bottom: 2rem;
             }
 
-            .noticias-content img {
+            .noticias-carousel img {
               width: 80%;
               height: 300px;
             }
@@ -327,29 +429,37 @@ function Home() {
           </Link>
         </div>
 
-        <div className="noticias-content">
-          <h2>ÚLTIMAS NOTÍCIAS</h2>
-          <hr></hr>
-          <div className="noticia-1">
-            <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
-            <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
-            <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
-          </div>
-          <hr></hr>
-          <div className="noticia-2">
-            <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
-            <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
-            <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
-          </div>
-          <hr></hr>
-          <div className="noticia-3">
-            <h3>Instituto Tubarão de Mesquita perto de ser inaugurado!</h3>
-            <img src={institutoFachada} alt="Aulão social de Muay Thai no Instituto Tubarão de Mesquita" />
-            <p>No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...</p>
-          </div>
-        </div>
+      <div className="noticias-carousel">
+              <h2>ÚLTIMAS NOTÍCIAS</h2>
+              <hr />
+              {isTouch ? (
+                <>
+                  <div className="noticias-carousel-content">
+                      <h3>{noticias[noticiaIndex].titulo}</h3>
+                    <div className="noticia-card">
+                  <div className="carousel-image-wrapper">
+                    <button className="carousel-btn-absolute carousel-btn-left" onClick={handlePrev} aria-label="Anterior">&#8592;</button>
+                      <img src={noticias[noticiaIndex].imagem} alt={noticias[noticiaIndex].titulo} />
+                    <button className="carousel-btn-absolute carousel-btn-right" onClick={handleNext} aria-label="Próxima">&#8594;</button>
+                  </div>
+                      <p>{noticias[noticiaIndex].texto}</p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <div className="noticias-carousel-content">
+                  {noticias.map((noticia, idx) => (
+                    <div className="noticia-card" key={idx}>
+                      <h3>{noticia.titulo}</h3>
+                      <img src={noticia.imagem} alt={noticia.titulo} />
+                      <p>{noticia.texto}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>-
+            </div>
 
-      </div>
       <div className="sobre-nós">
         <div className="overlay">
           <div className="overlay-content">
@@ -370,7 +480,7 @@ function Home() {
                 value={nome}
                 onChange={e => setNome(e.target.value)}
                 required
-              />
+                />
               <input
                 type="email"
                 placeholder="Seu email"
@@ -384,23 +494,23 @@ function Home() {
                 onChange={e => setMensagem(e.target.value)}
                 rows={4}
                 required
-              />
+                />
               <Button1 type="submit">Enviar email</Button1>
             </form>
           </div>
         </div>
       </div>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.60722228667!2d-43.43277644125584!3d-22.77995331458939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f72db76229%3A0x31aa4099e9cf9c91!2sG.R.E.S.%20Tubar%C3%A3o%20de%20Mesquita!5e0!3m2!1spt-BR!2sbr!4v1751064162651!5m2!1spt-BR!2sbr"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.60722228667!2d-43.43277644125584!3d-22.77995331458939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967f72db76229%3A0x31aa4099e9cf9c91!2sG.R.E.S.%20Tubar%C3%A3o%20de%20Mesquita!5e0!3m2!1spt-BR!2sbr!4v1751064162651!5m2!1spt-BR!2sbr"
         width="340"
         height="300"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-      />
-    </>
-  );
-}
+        />
+        </>
+      );
+    }
 
 export default Home
