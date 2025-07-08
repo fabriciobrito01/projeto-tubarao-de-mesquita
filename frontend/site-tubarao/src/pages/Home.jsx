@@ -320,37 +320,11 @@ function Home() {
               font-size: 1.3rem;
             }
 
-            .noticias-carousel {
-              max-width: 1400px;
-              margin: 2.5rem auto;
-              padding: 2rem 1.5rem;
-              display: flex;
-              flex-direction: row;
-              gap: 2rem;
-              align-items: center;
-              justify-content: center;    
-            }
-
-            .noticias-carousel h3 {
-              font-size: 1.4rem;
-            }
-
-            .noticias-carousel p {
-              font-size: 1.4rem;
-              padding-top: 1.8rem;  
-              padding-bottom: 2rem;
-            }
-
-            .noticias-carousel img {
-              width: 80%;
-              height: 300px;
-            }
-
             .sobre-nós {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 700px;
+                min-height: 750px;
                 background-image: url(${backgroudPicture});
                 background-size: cover;
                 background-position: center;
@@ -376,8 +350,8 @@ function Home() {
             }
 
             .sobre-nós button {
-              width: 30%;
-              font-size: 1.3rem;
+              width: 50%;
+              font-size: 1.2rem;
               height: 50px;
             }
             .sobre-nós p {
@@ -432,8 +406,6 @@ function Home() {
       <div className="noticias-carousel">
               <h2>ÚLTIMAS NOTÍCIAS</h2>
               <hr />
-              {isTouch ? (
-                <>
                   <div className="noticias-carousel-content">
                       <h3>{noticias[noticiaIndex].titulo}</h3>
                     <div className="noticia-card">
@@ -445,19 +417,7 @@ function Home() {
                       <p>{noticias[noticiaIndex].texto}</p>
                     </div>
                   </div>
-                </>
-              ) : (
-                <div className="noticias-carousel-content">
-                  {noticias.map((noticia, idx) => (
-                    <div className="noticia-card" key={idx}>
-                      <h3>{noticia.titulo}</h3>
-                      <img src={noticia.imagem} alt={noticia.titulo} />
-                      <p>{noticia.texto}</p>
-                    </div>
-                  ))}
                 </div>
-              )}
-            </div>-
             </div>
 
       <div className="sobre-nós">
