@@ -8,6 +8,7 @@ import svgEmail from "../assets/svg/svg-email.svg";
 
 import Button1 from "../components/Button1";
 import noticiaOrdemDeDesfile2026 from "../assets/noticias/noticia-ordemdedesfile2026.jpg";
+import noticiaReforcoEscolar from "../assets/desfile23/desfile23-alaeducacao.jpg";
 import institutoFachada from "../assets/instituto/instituto-fachadagalpao.jpg";
 import primeiroCasal24 from "../assets/desfile24/desfile24-primeirocasal.jpg";
 import backgroudPicture from "../assets/desfile24/desfile24-comissaodefrentedancando.jpg";
@@ -61,17 +62,20 @@ function Home() {
     {
       titulo: "Instituto Tubarão de Mesquita perto de ser inaugurado!",
       imagem: institutoFachada,
-      texto: "No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos..."
+      texto: "No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos...",
+      link: "/noticias"
     },
     {
       titulo: "Tubarão de Mesquita será a 3ª escola a desfilar no Domingo do Carnaval 2026!",
       imagem: noticiaOrdemDeDesfile2026,
-      texto: "Com muita alegria anunciamos que seremos a terceira escola a desfilar no domingo de Carnaval! Nosso coração já bate no ritmo da avenida, e estamos prontos para mostrar a força da nossa escola e a garra da nossa comunidade..."
+      texto: "Com muita alegria anunciamos que seremos a terceira escola a desfilar no domingo de Carnaval! Nosso coração já bate no ritmo da avenida, e estamos prontos para mostrar a força da nossa escola e a garra da nossa comunidade...",
+      link: "/noticias"
     },
     {
-    titulo: "Projeto de reforço escolar começa em agosto",
-      imagem: institutoFachada,
-      texto: "A partir de agosto, o Instituto Tubarão de Mesquita oferecerá aulas de reforço escolar gratuitas para alunos do ensino fundamental da região..."
+      titulo: "Projeto de reforço escolar começa em agosto no Instituto!",
+      imagem: noticiaReforcoEscolar,
+      texto: "A partir de agosto, o Instituto Tubarão de Mesquita oferecerá aulas de reforço escolar gratuitas para alunos do ensino fundamental da região...",
+      link: "/noticias"
     }
   ];
 
@@ -121,6 +125,7 @@ function Home() {
             background: #222;
             border-radius: 0.5rem;
             margin-bottom: 2.5rem;
+            padding: 1rem;
             transition: transform 0.5s ease-in-out;
           }
 
@@ -138,6 +143,9 @@ function Home() {
             flex-direction: column; /* Coloca imagem, título e texto em coluna por padrão */
             align-items: center; /* Centraliza o conteúdo dentro do card */
             text-align: left; /* Centraliza o texto e título por padrão */
+            position: relative;
+            padding-bottom: 4rem;
+            justify-content: space-between;
           }
 
           .carousel-image-wrapper {
@@ -172,12 +180,32 @@ function Home() {
             margin-top: 0.5rem; /* Espaço acima do texto */
             margin-bottom: 3.5rem; /* Espaço abaixo do texto */
             width: 100%;
+            min-height: 100px;
           }
-            
-            .noticias-carousel button {
-              height: 150px;
-              margin: 3rem auto;
-            }
+
+          /* Estilos para o botão "Continue lendo" */
+          .noticia-card .noticia-button-link {
+              display: flex;
+              justify-content: center; /* Centraliza o botão horizontalmente */
+              width: 100%; /* O link ocupa toda a largura para centralizar o botão */
+              position: absolute; /* Torna o botão posicionado absolutamente */
+              bottom: 1rem; /* Distância do botão da parte inferior do .noticia-card */
+              margin-bottom: 1rem;
+              left: 50%; /* Centraliza horizontalmente */
+              transform: translateX(-50%); /* Ajuste final para centralização perfeita */
+          }
+
+          .noticia-card .noticia-button-link button {
+              width: 180px; /* Largura do botão */
+              height: 40px; /* Altura do botão */
+              font-size: 1rem; /* Tamanho da fonte do botão */
+              margin: 0; /* Remove qualquer margem extra que possa ter do Button1 */
+          }
+
+          .noticias-carousel button {
+            height: 150px;
+            margin: 3rem auto;
+          }
 
           /* Estilização da seção "Sobre Nós" */
           .sobre-nós {
@@ -450,6 +478,9 @@ function Home() {
                       <img src={noticia.imagem} alt={noticia.titulo} /> {/* Acessa a imagem da notícia atual */}
                     </div>
                     <p>{noticia.texto}</p> {/* Acessa o texto da notícia atual */}
+                    <Link to={noticia.link} className="noticia-button-link">
+                      <Button1>Continue lendo</Button1>
+                    </Link>
                   </div>
                 ))}
               </Carousel>
