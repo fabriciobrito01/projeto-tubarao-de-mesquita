@@ -191,9 +191,9 @@ function HistoriaTubarao() {
 
                     <Link to="/tubarao/carnaval2025">
                         <Button1 >Saiba mais</Button1>
-                    </Link>    
+                    </Link>  
                 </div>
-
+                    <hr />
             </div>
         </>
     );
