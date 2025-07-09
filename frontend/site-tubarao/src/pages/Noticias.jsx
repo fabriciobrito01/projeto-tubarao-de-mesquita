@@ -1,6 +1,5 @@
 import institutoFachada from "../assets/instituto/instituto-fachadagalpao.jpg";
-import Button1 from "../components/Button1.jsx";
-
+import noticiaOrdemDeDesfile2026 from "../assets/noticias/noticia-ordemdedesfile2026.jpg";
 function Noticias() {
   return (
     <>
@@ -101,9 +100,9 @@ function Noticias() {
           </div>
           <div className="noticia-card">
             <div className="noticia-content">
-              <img src={institutoFachada} alt="Instituto Tubarão de Mesquita" />
+              <img src={noticiaOrdemDeDesfile2026} alt="Ordem de Desfile 2026" />
               <div className="noticia-text">
-                <h2>Enredo escolhido para o Carnaval 2026!</h2>
+                <h2>Tubarão de Mesquita será a 3ª escola a desfilar no Domingo do Carnaval 2026!</h2>
                 <p>Resumo ou descrição da notícia 2. Edite ou substitua este texto conforme desejar... <a href="">Leia mais →</a></p>
               </div>
           </div>

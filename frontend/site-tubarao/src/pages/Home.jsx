@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Importe o CSS do carrossel
 
-import locationSvg from "../assets/location-svgrepo-com.svg";
-import mailSvg from "../assets/mail-svgrepo-com.svg";
+import svgLocalizacao from "../assets/svg/svg-localizacao.svg";
+import svgEmail from "../assets/svg/svg-email.svg";
+
 import Button1 from "../components/Button1";
+import noticiaOrdemDeDesfile2026 from "../assets/noticias/noticia-ordemdedesfile2026.jpg";
 import institutoFachada from "../assets/instituto/instituto-fachadagalpao.jpg";
 import primeiroCasal24 from "../assets/desfile24/desfile24-primeirocasal.jpg";
 import backgroudPicture from "../assets/desfile24/desfile24-comissaodefrentedancando.jpg";
@@ -62,9 +64,9 @@ function Home() {
       texto: "No dia 27 de Julho de 2025, o Instituto Tubarão de Mesquita será inaugurado com a missão de atender a comunidade oferecendo uma variedade de serviços essenciais e programas educativos..."
     },
     {
-      titulo: "Aulão social de Muay Thai no Instituto Tubarão de Mesquita",
-      imagem: institutoFachada,
-      texto: "O Instituto Tubarão de Mesquita promoveu um aulão social de Muay Thai para crianças e jovens da comunidade, incentivando o esporte e a cidadania..."
+      titulo: "Tubarão de Mesquita será a 3ª escola a desfilar no Domingo do Carnaval 2026!",
+      imagem: noticiaOrdemDeDesfile2026,
+      texto: "Com muita alegria anunciamos que seremos a terceira escola a desfilar no domingo de Carnaval! Nosso coração já bate no ritmo da avenida, e estamos prontos para mostrar a força da nossa escola e a garra da nossa comunidade..."
     },
     {
     titulo: "Projeto de reforço escolar começa em agosto",
@@ -463,13 +465,13 @@ function Home() {
             <h2>SOBRE NÓS</h2>
             <hr />
             <div className="quadra"></div>
-            <h3><img src={locationSvg} alt="icone de localização" />Quadra Tubarão de Mesquita</h3>
+            <h3><img src={svgLocalizacao} alt="icone de localização" />Quadra Tubarão de Mesquita</h3>
             <p>Estr. Feliciano Sodré, 2325 - Centro, Mesquita - RJ, 26553-000</p>
             <div className="barracao"></div>
-            <h3><img src={locationSvg} alt="icone de localização" />Barracão Tubarão de Mesquita</h3>
+            <h3><img src={svgLocalizacao} alt="icone de localização" />Barracão Tubarão de Mesquita</h3>
             <p>Rua Prefeito José Montes Paixão, 1265 - Centro, Mesquita - RJ, 26553-160</p>
             <div className="email"></div>
-            <h3><img src={mailSvg} alt="icone de email" />Entre em contato conosco</h3>
+            <h3><img src={svgEmail} alt="icone de email" />Entre em contato conosco</h3>
             <form className="form-contato" onSubmit={handleEnviar}>
               <input
                 type="text"

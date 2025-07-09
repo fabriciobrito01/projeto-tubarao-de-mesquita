@@ -1,7 +1,7 @@
-import presidente from '../assets/presidente.jpg';
-import PresidenteDeHonra from '../assets/presidentedehonra.jpg';
-import interprete from '../assets/interprete.jpg';
-import mestredebateria from '../assets/mestredebateria.jpg';
+import presidente from "../assets/ficha/ficha-presidente.jpg";
+import presidenteHonra from "../assets/ficha/ficha-presidentedehonra.jpg";
+import interprete from "../assets/ficha/ficha-interprete.jpg";
+import mestreBateria from "../assets/ficha/ficha-mestredebateria.jpg";
 
 function FichaTecnica() {
   return (
@@ -85,7 +85,7 @@ function FichaTecnica() {
         </div>
         <div className="container-componente">
           <h2>Presidente de Honra</h2>
-          <img src={PresidenteDeHonra} alt="Presidente de Honra" className="ficha-tecnica-img" />
+          <img src={presidenteHonra} alt="Presidente de Honra" className="ficha-tecnica-img" />
           <p>Dib Elias</p>
         </div>
         <div className="container-componente">
@@ -95,7 +95,7 @@ function FichaTecnica() {
         </div>
         <div className="container-componente">
           <h2>Mestre de bateria</h2>
-          <img src={mestredebateria} alt="Mestre de bateria" className="ficha-tecnica-img" />
+          <img src={mestreBateria} alt="Mestre de bateria" className="ficha-tecnica-img" />
           <p>Michelzinho RP</p>
         </div>
         <div className="container-componente">

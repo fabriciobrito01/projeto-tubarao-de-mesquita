@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logoTubarao from '../assets/logo-tubarao.svg';
-import telefone from '../assets/telephone-svgrepo-com.svg';
-import whatsapp from '../assets/whatsapp-svgrepo-com.svg';
+import svgTelefone from '../assets/svg/svg-telefone.svg';
+import svgWhatsapp from '../assets/svg/svg-whatsapp.svg';
 
 function Footer() {
     return (
@@ -168,11 +168,11 @@ function Footer() {
                     </div>
                 </div>
                 <div className="Telefone">
-                    <img src={telefone} alt="Telefone" />
+                    <img src={svgTelefone} alt="Telefone" />
                     <p>(21) 97448-3335</p>
                 </div>
                 <div className="Whatsapp">
-                    <img src={whatsapp} alt="WhatsApp" />
+                    <img src={svgWhatsapp} alt="WhatsApp" />
                     <p>(21) 97448-3335</p>
                 </div>
                 <div className="footer-text">
