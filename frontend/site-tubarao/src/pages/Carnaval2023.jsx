@@ -66,7 +66,7 @@ NINGUÉM MAIS DERRUBA O MEU TUBARÃO.
       enredoTitle="Levanta Baixada! Samba sua arte!"
       enredoContent={enredoContent2023}
       sambaContent={sambaContent2023}
-      sambaVideoUrl="https://www.youtube.com/embed/SUA_ID_DO_VIDEO_AQUI" // Substitua pelo ID real do YouTube do seu vídeo
+      sambaVideoUrl="https://www.youtube.com/embed/mb4exq-fmLs" // Substitua pelo ID real do YouTube do seu vídeo
       desfileContent={desfileContent2023}
     />
   );

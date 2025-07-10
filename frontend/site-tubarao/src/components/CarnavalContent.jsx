@@ -139,14 +139,14 @@ function CarnavalContent({
 
         .samba-enredo {
             white-space: pre-wrap;
-            font-family: 'Courier New', monospace;
+            font-family: 'Inter', monospace;
             background-color: #f8f8f8;
             border: 1px solid #ddd;
             padding: 1.5rem;
             border-radius: 8px;
             margin-top: 1.5rem;
             font-size: 0.95rem;
-            line-height: 1.5;
+            line-height: 1.7;
             color: #333;
         }
 

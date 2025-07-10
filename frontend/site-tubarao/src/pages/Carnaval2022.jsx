@@ -84,7 +84,7 @@ function Carnaval2022() {
       enredoTitle="Mesquita Futebol Clube - De Barão à Tubarão"
       enredoContent={enredoContent2022}
       sambaContent={sambaContent2022}
-      sambaVideoUrl="https://www.youtube.com/embed/SUAE2w5R-s0" // Substitua pelo URL correto do YouTube
+      sambaVideoUrl="https://www.youtube.com/embed/0JQkqXZNEJM" // Substitua pelo URL correto do YouTube
       desfileContent={desfileContent2022}
     />
   );
